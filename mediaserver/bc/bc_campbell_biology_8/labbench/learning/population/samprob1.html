@@ -1,0 +1,161 @@
+<HTML>
+<HEAD>
+	<TITLE>Population Genetics: Sample Problem 1</TITLE>
+	<MAP NAME="contents">
+		<AREA SHAPE="RECT" COORDS="16,1, 117,14" HREF="intro.html">
+		<AREA SHAPE="RECT" COORDS="16,22, 117,33" HREF="concepts.html">
+		<AREA SHAPE="RECT" COORDS="16,41, 117,61" HREF="design.html">
+		<AREA SHAPE="RECT" COORDS="16,70, 117,80" HREF="analysis.html">
+		<AREA SHAPE="RECT" COORDS="16,88, 117,99" HREF="quiz-sa.html">
+	</MAP>
+	<SCRIPT LANGUAGE="Javascript" SRC="../../code/biocookie.js"></SCRIPT>
+<style type="text/css">
+BODY, P, TD, OL, UL, DD, DT, DL {font: 11px "Trebuchet MS", verdana, sans-serif; color:#222; margin:20px;}
+A, A:visited, .cg {text-decoration:underline; color:#369; font:inherit;}
+A:hover, A:visited:hover {text-decoration:none; color:#369;  font:inherit;}
+</style>
+</head>
+
+<BODY BGCOLOR="white">
+
+<B>Population Genetics</B><BR>
+
+<TABLE BORDER="0" WIDTH="600" CELLPADDING="4" CELLSPACING="0">
+<TR>
+	<TD WIDTH="25" VALIGN="TOP">
+		<IMG SRC="../../images/spacer.gif" WIDTH="25" HEIGHT="1">
+	</TD>
+	<TD WIDTH ="150" VALIGN="TOP">
+		<IMG SRC="../images/isgconts.gif" WIDTH="122" HEIGHT="113" BORDER="0" ALT="Contents" ISMAP USEMAP="#contents">
+	</TD>
+	<TD WIDTH="350" VALIGN="TOP">		
+		<FONT SIZE="+1"><B>Sample Problem 1</B></FONT>
+		<P>
+		Let's return to our population of pigs.  Remember that the allele for black coat is recessive.  We can use the <A HREF="hardwein.html">Hardy-Weinberg equation</A> to determine the percent of the pig population that is heterozygous for white coat.
+	</TD>
+</TR>
+<TR>
+	<TD WIDTH="25" VALIGN="TOP">
+		<IMG SRC="../../images/spacer.gif" WIDTH="25" HEIGHT="1">
+	</TD>
+	<TD COLSPAN="2" ALIGN="RIGHT" VALIGN="TOP">
+		<IMG SRC="images/allfreq2.gif" BORDER="0">
+	</TD>
+</TR>
+<TR>
+	<TD WIDTH="25" VALIGN="TOP">
+		<BR>
+	</TD>
+	<TD WIDTH ="150" VALIGN="BOTTOM">
+		<IMG SRC="../../images/spacer.gif" WIDTH="150" HEIGHT="1" BORDER="0">
+	</TD>
+	<TD WIDTH ="350" VALIGN="TOP">
+		<TABLE WIDTH="350" BORDER="1" CELLPADDING="3" CELLSPACING="0" BGCOLOR="#FFFFCC">
+		<TR>
+			<TD WIDTH="350" VALIGN="MIDDLE">
+				<A NAME="q1"></A>
+				<OL>
+					<LI> Calculate <I>q</I><SUP>2</SUP><P>
+					Count the individuals that are homozygous recessive in the illustration above.  Calculate the percent of the total population they represent.  This is <I>q</I><SUP>2</SUP>.<P>
+					<SCRIPT LANGUAGE="Javascript"> 
+					gsUserAnswer = getNumberedBioCookie("samprob11");
+						if(gsUserAnswer == null) {
+						// First time into the page, or no text in text area
+						document.write("<FORM NAME='q1' ACTION='javascript:window.location.reload();' METHOD='post'>");
+						document.write("<INPUT TYPE='text' NAME='q1box' SIZE='25' VALUE='' onchange='writeNumberedBioCookie(\"samprob11\",this.value);'><BR>");
+						document.write("<INPUT TYPE='IMAGE' NAME='Submit' SRC='../../images/checkans.gif' BORDER='0' ALT='Check Answer'>");
+						document.write("</FORM>");
+					} else {
+						// if there is text in the text area and the user hit the submit button
+						document.write("<P><B>Your answer:</B> " + gsUserAnswer + "<BR>");
+						document.write("<P><FONT COLOR='#037550'><B>Answer:</B><BR>");
+						document.write("Four of the sixteen individuals show the recessive phenotype, so the correct answer is 25% or 0.25.</FONT>");
+					}
+					</SCRIPT>
+				</OL>
+			</TD>
+		</TR>
+		<TR>
+			<TD WIDTH="350" VALIGN="MIDDLE">
+				<A NAME="q2"></A>
+				<OL START="2">
+				<LI> Find <I>q</I>.
+				<P>
+				Take the square root of <I>q</I><SUP>2</SUP> to obtain <I>q</I>, the frequency of the recessive allele.
+				<P>
+				<SCRIPT LANGUAGE="Javascript"> 
+				gsUserAnswer = getNumberedBioCookie("samprob12");
+				if(gsUserAnswer == null) {
+				// First time into the page, or no text in text area
+				document.write("<FORM NAME='q2' ACTION='javascript:window.location.reload();' METHOD='post'>");
+				document.write("<INPUT TYPE='text' NAME='q2box' SIZE='25' VALUE='' onchange='writeNumberedBioCookie(\"samprob12\",this.value);'><BR>");
+				document.write("<INPUT TYPE='IMAGE' NAME='Submit' SRC='../../images/checkans.gif' BORDER='0' ALT='Check Answer'>");
+				document.write("</FORM>");
+				} else {
+				// if there is text in the text area and the user hit the submit button
+				document.write("<P><B>Your answer:</B> " + gsUserAnswer + "<BR>");
+				document.write("<P><FONT COLOR='#037550'><B>Answer:</B><BR><I>q</I> = 0.5</FONT>");
+				}
+				</SCRIPT>
+			</OL>
+			</TD>
+		</TR>
+		<TR>
+			<TD WIDTH="350" VALIGN="MIDDLE">
+				<A NAME="q3"></A>
+				<OL START="3">
+				<LI> Find <I>p</I>.
+				<P>
+				The sum of the frequencies of both alleles = 100%,  <I>p</I> + <I>q</I> = l.  You know <I>q</I>, so what is <I>p</I>, the frequency of the dominant allele?
+				<P>
+				<SCRIPT LANGUAGE="Javascript"> 
+				gsUserAnswer = getNumberedBioCookie("samprob13");
+				if(gsUserAnswer == null) {
+				// First time into the page, or no text in text area
+				document.write("<FORM NAME='q3' ACTION='javascript:window.location.reload();' METHOD='post'>");
+				document.write("<INPUT TYPE='text' NAME='q3box' SIZE='25' VALUE='' onchange='writeNumberedBioCookie(\"samprob13\",this.value);'><BR>");
+				document.write("<INPUT TYPE='IMAGE' NAME='Submit' SRC='../../images/checkans.gif' BORDER='0' ALT='Check Answer'>");
+				document.write("</FORM>");
+				} else {
+				// if there is text in the text area and the user hit the submit button
+				document.write("<P><B>Your answer:</B> " + gsUserAnswer + "<BR>");
+				document.write("<P><FONT COLOR='#037550'><B>Answer:</B><BR><I>p</I> = 1 - <I>q</I>, so <I>p</I> = 0.5</FONT>");
+				}
+				</SCRIPT>
+				</OL>
+			</TD>
+		</TR>
+		<TR>
+			<TD WIDTH="350" VALIGN="MIDDLE">
+				<A NAME="q4"></A>
+				<OL START="4">
+				<LI> Find 2<I>pq</I>.
+				<P>
+				The frequency of the heterozygotes is represented by 2<I>pq</I>.  This gives you the percent of the population that is heterozygous for white coat:
+				<P>
+				<SCRIPT LANGUAGE="Javascript"> 
+				gsUserAnswer = getNumberedBioCookie("samprob14");
+				if(gsUserAnswer == null) {
+				// First time into the page, or no text in text area
+				document.write("<FORM NAME='q4' ACTION='javascript:window.location.reload();' METHOD='post'>");
+				document.write("<INPUT TYPE='text' NAME='q4box' SIZE='25' VALUE='' onchange='writeNumberedBioCookie(\"samprob14\",this.value);'><BR>");
+				document.write("<INPUT TYPE='IMAGE' NAME='Submit' SRC='../../images/checkans.gif' BORDER='0' ALT='Check Answer'>");
+				document.write("</FORM>");
+				} else {
+				// if there is text in the text area and the user hit the submit button
+				document.write("<P><B>Your answer:</B> " + gsUserAnswer + "<BR>");
+				document.write("<P><FONT COLOR='#037550'><B>Answer:</B><BR>2<I>pq</I> = 2(0.5) (0.5) = 0.5 ,  so  50% of the population is heterozygous.</FONT>");
+				}
+				</SCRIPT>
+				</OL>
+			</TD>
+		</TR>
+		</TABLE>
+		<P>
+		<IMG SRC="../../images/arrow.gif" BORDER="0" WIDTH="10" HEIGHT="10"> Continue to <A HREF="samprob2.html">Sample Problem 2</A>.
+	</TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>

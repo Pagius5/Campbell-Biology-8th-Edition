@@ -1,0 +1,7 @@
+<!-- Configuration file for Flash tutorials -->
+<TUTORIAL TITLE="Atmospheric CO&lt;font size=&quot;-4&quot;&gt;2&lt;/font&gt; and Temperature Change">
+	<STEP SUBSTEP="1" STEPTITLE="Graphing changes in CO&lt;font size=&quot;-4&quot;&gt;2&lt;/font&gt;" MOVIE="1_graphing.swf" />
+	<STEP SUBSTEP="1" TEXTFILE="2_narr_1.xml" STEPTITLE="Plotting temperature with CO&lt;font size=&quot;-4&quot;&gt;2&lt;/font&gt;" MOVIE="2_temperature.swf"/>
+	<STEP MOVIE="3_scale.swf" SUBSTEP="1" TEXTFILE="3_narr_1.xml" STEPTITLE="Impact of graph scale"/>
+	<STEP SUBSTEP="1" TEXTFILE="4_narr_1.xml" STEPTITLE="Predicting future changes" MOVIE="4_emissions.swf"/>
+</TUTORIAL>

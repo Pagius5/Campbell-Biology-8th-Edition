@@ -1,0 +1,88 @@
+<HTML>
+<HEAD>
+	<TITLE>Diffusion and Osmosis: Water Potential</TITLE>
+	<MAP NAME="contents">
+		<AREA SHAPE="RECT" COORDS="16,1, 117,14" HREF="intro.html">
+		<AREA SHAPE="RECT" COORDS="16,22, 117,33" HREF="concepts.html">
+		<AREA SHAPE="RECT" COORDS="16,41, 117,61" HREF="design.html">
+		<AREA SHAPE="RECT" COORDS="16,70, 117,80" HREF="analysis.html">
+		<AREA SHAPE="RECT" COORDS="16,88, 117,99" HREF="quiz-sa.html">
+	</MAP>
+	<SCRIPT LANGUAGE="JavaScript"> var mode = "still"; </SCRIPT>		
+	<SCRIPT LANGUAGE="JavaScript" SRC="../../code/animateButtonLib.js"></SCRIPT>
+	<SCRIPT LANGUAGE="Javascript" SRC="../../code/biocookie.js"></SCRIPT>
+<style type="text/css">
+BODY, P, TD, OL, UL, DD, DT, DL {font: 11px "Trebuchet MS", verdana, sans-serif; color:#222; margin:20px;}
+A, A:visited, .cg {text-decoration:underline; color:#369; font:inherit;}
+A:hover, A:visited:hover {text-decoration:none; color:#369;  font:inherit;}
+</style>
+</head>
+
+<BODY BGCOLOR="white">
+<B>Diffusion &amp; Osmosis</B><BR>
+
+<TABLE BORDER="0" CELLPADDING="4" CELLSPACING="0" WIDTH="600">
+<TR>
+	<TD WIDTH="25" VALIGN="TOP">
+		<IMG SRC="../../images/spacer.gif" WIDTH="25" HEIGHT="1">
+	</TD>
+	<TD VALIGN="TOP" WIDTH="150">
+		<IMG SRC="../images/isgconts.gif" WIDTH="122" HEIGHT="113" BORDER="0" ALT="Contents" ISMAP USEMAP="#contents">
+	</TD>
+	<TD WIDTH="350" VALIGN="TOP">		
+		<FONT SIZE="+1"><B>Water Potential</B></FONT>
+		<P>
+		Because you will be working with potato cells in the laboratory, you need to understand the concept of <A HREF="../../glossary/wxyz.html#water potential"><B>water potential</B></A>.  Biologists use this term to describe the tendency of water to leave one place  in favor of another. Water always moves from an area of higher water potential to an area of lower water potential. 
+		<P>
+		Water potential is affected by two factors:  pressure and the amount of solute.  For example, imagine a red blood cell dropped into  distilled water. Water will move into the red blood cell and cause the cell to expand, stretching the flexible membrane.  At some point, the pressure of the incoming water will cause the cell to pop, just like an over-filled balloon.
+		<P>
+		<A NAME="problem"></A>
+		<TABLE WIDTH="300" CELLPADDING="5" CELLSPACING="0" BORDER="1" BGCOLOR="#FFFFCC">
+		<TR>
+			<TD WIDTH="300">
+				Why don't red blood cells pop in the bloodstream?
+				<P>
+				<SCRIPT LANGUAGE="Javascript"> 
+				gsUserAnswer = getNumberedBioCookie("watpot1");
+				if(gsUserAnswer == null) {
+				// First time into the page, or no text in text area
+				document.write("<FORM NAME='q1' ACTION='javascript:window.location.reload();' METHOD='post'>");
+				document.write("<TEXTAREA NAME='q1box' ROWS='3' COLS='35' WRAP='VIRTUAL' VALUE='' onchange='writeNumberedBioCookie(\"watpot1\",this.value);'></TEXTAREA><P>");
+				document.write("<INPUT TYPE='image' SRC='../../images/checkans.gif' BORDER='0' NAME='SUBMIT' ALT='Check Answer' NAME='CheckAnswer'>");
+				document.write("</FORM>");
+				} else {
+				// if there is text in the text area and the user hit the submit button
+				document.write("<P><B>Your answer:</B> " + gsUserAnswer);
+				document.write("<P><FONT COLOR='#037550'><B>Answer:</B> Red blood cells don't pop because the blood provides an isotonic environment for the cells.</FONT>");
+				}
+				</SCRIPT>
+			</TD>
+		</TR>
+		</TABLE>
+	</TD>
+</TR>
+<TR>
+	<TD WIDTH="25" VALIGN="TOP">
+		<BR>
+	</TD>
+	<TD WIDTH ="150" VALIGN="BOTTOM">
+		<IMG SRC="../../images/spacer.gif" WIDTH="150" HEIGHT="1" BORDER="0">
+	</TD>
+	<TD WIDTH ="350" VALIGN="TOP">
+		<A NAME="animation1"></A>
+		<IMG SRC="images/rbc1.gif" BORDER="0" ALT="Water potential in red blood cell" NAME="animate1">
+		<A HREF="#" ONCLICK='animateImgAndSwitchBtn("rbc","rbc","replay","replay","1");return false;'><IMG SRC="../../images/animate.gif" BORDER="0" ALT="Animate" NAME="button1"></A>
+		<P>
+		If a plant cell is placed in distilled water, water will enter the cell and the cell contents will expand.  However, the elastic cell wall exerts a back pressure, which will limit the net gain of water.
+		<P>
+		<A NAME="animation2"></A>
+		<IMG SRC="images/plant1.gif" BORDER="0" ALT="Water potential of plant cell" NAME="animate2">
+		<A HREF="#" ONCLICK='animateImgAndSwitchBtn("plant", "plant", "replay", "replay", "2");return false;'><IMG SRC="../../images/animate.gif" BORDER="0" ALT="Animate" NAME="button2"></A>
+		<P>
+		<IMG SRC="../../images/arrow.gif" BORDER="0" WIDTH="10" HEIGHT="10"> Continue to <A HREF="watcalc.html">Calculating Water Potential</A>.
+	</TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>

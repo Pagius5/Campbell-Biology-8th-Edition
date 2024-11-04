@@ -1,0 +1,54 @@
+License and Limited Warranty Agreement
+
+CAMPBELL BIOLOGY
+BIOLOGY 8E AP* Edition, by Neil A. Campbell and Jane B. Reece
+2008
+
+(Individual Ownership License) 
+Warning: Pearson Education, Inc., publishing as Benjamin Cummings,is willing to license to you the software on this CD-ROM, only upon the condition that you accept all of the terms contained in this License and Limited Warranty Agreement. CAREFULLY READ THIS LICENSE AND LIMITED WARRANTY AGREEMENT (this "Agreement") BEFORE YOU USE THIS PRODUCT AS LAUNCHING THE SOFTWARE WILL INDICATE YOUR ASSENT TO THE TERMS OF THIS AGREEMENT. 
+
+This is a legal agreement between you (an individual) and Pearson Education, Inc., publishing as Benjamin Cummings (hereinafter called "Publisher"). By using this product you agree to be bound by this Agreement. If you do not agree to the terms of this Agreement, do not use the Product. 
+
+DEFINITIONS 
+The following definitions apply to the terms as they appear in this Agreement: 
+* "You" and "Your" refer to any person that acquires or uses this Product. 
+* " Publisher's Content" means digitally encoded illustrations, pictures, images, 
+photographs, animations, video, sound, text, and other non-programmatic material 
+created by Publisher or their licensors. 
+* "Program" means the computer programs contained in this Product created by 
+Publisher or their licensors. 
+* "Product" means the Programs, Publisher's Content, documentation, and other 
+material provided to You by Publisher. 
+
+LICENSE 
+You are obtaining limited rights to use the Product subject to the terms of this Agreement. Publisher or the licensors retain ownership of (i) the Product and (ii) any intellectual properties related to the Product. 
+
+PERMITTED USES OF THE PROGRAM 
+Publisher grants You a personal, nonexclusive, nontransferable and non-
+assignable limited license to use the Program as follows. You may: make a copy of the Program on a storage device solely for execution on one computer at a time of the type identified in the documentation contained in the Product for use by a single user for Your educational use only; load a copy of the Program in the memory of one computer for use with that computer by one person at a time; and, make a copy of the Program for archival purposes only. 
+PROHIBITED USES 
+You may not use, copy, modify, or distribute the Programs, Publisher's Content, or documentation contained in this Product except as expressly described in this Agreement or permitted in writing signed by an authorized representative of Publisher. Without limiting the generality of the foregoing statement, You may not: 
+*reverse-engineer, disassemble or decompile the Programs or in any way attempt to discover or reproduce the codes, techniques, formats, concepts, methods, ideas, and information contained in or used to create the Program; 
+*export the Product or any portion thereof to any person or entity in violation of the United States Export Administration Act; 
+*broadcast or televise any of the Programs, Publisher 's Content; 
+*distribute copies of the Programs, Publisher's Content, or documentation in the 
+Product or electronically transfer the Programs or Publisher 's Content from one 
+computer to another over a network; 
+*sell the Programs or Publisher's Content; 
+*lend, lease, rent, or license the Product, or any portion thereof; or make or export copies of the Publisher's Content, or any portion thereof, for use with another computer program;
+*copy, modify, or create derivatives of the Programs, the Publisher's Content or documents contained in the Product. 
+
+TERMINATION 
+This Agreement and Your rights to use the Product terminate automatically if You violate any part of this Agreement. In the event of termination, You must immediately destroy all copies of the Product or return the Product to Pearson Education, Inc., publishing as Benjamin Cummings, including all copies of the Programs made by You, as permitted hereunder. 
+
+LIMITED WARRANTY 
+Publisher warrants that, upon delivery by Publisher, the media on which the Product is distributed will be free from defects in materials and workmanship and the Programs will substantially conform to published specifications and to the documentation, provided Programs are used on the computer hardware and with the operating systems and software programs for which they were designed. If the Product fails to comply with these limited warranties, Publisher will replace the media or, at Publisher's option, make a reasonable effort to correct any non-conformities in the Programs. You must, however, return Your original media, along with a copy of Your paid invoice, to Publisher or their authorized representative within 90 days of the date You purchased the Product. If Publisher is unable to correct defective media or nonconformities in the Programs, Publisher will refund the price You paid for this Product. The refund will fully satisfy all of Your claims under this limited warranty. This limited warranty shall continue for any replacement Product for the rest of the original 90-day warranty period or for 30 days from the date You receive the replacement, whichever is longer. Publisher's liability to You for actual damages for any cause whatsoever, and regardless of the form of the action, will be limited to the money paid for the Product. Publisher does not warrant that the Product is free from all errors and omissions or that the functions contained in the product will meet Your requirements. Publisher does not warrant that Publisher's Content meets any particular 
+standard. The limited warranty is void if failure of product has resulted from modification, accident, abuse, or misapplication. 
+
+EXCEPT AS SPECIFICALLY SET FORTH ABOVE, PUBLISHER AND THE LICENSORS DISCLAIM ALL OTHER WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. THIS LIMITED WARRANTY GIVES YOU SPECIFIC LEGAL RIGHTS, AND YOU MAY HAVE OTHER RIGHTS, WHICH VARY FROM STATE TO STATE. EXCEPT AS SPECIFICALLY SET FORTH ABOVE, PUBLISHER AND THE LICENSORS WILL IN NO EVENT BE LIABLE FOR ANY DAMAGES WHATSOEVER FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES, EITHER DIRECT OR INDIRECTLY INCLUDING BUT NOT LIMITED TO LOSS OF BUSINESS PROFITS, INCOME OR USE DATA. SOME STATES DO NOT ALLOW EXCLUSION OR LIMITATION OF INCIDENTAL OR 
+CONSEQUENTIAL DAMAGES; THEREFORE, THE LIMITATIONS SET IN THIS AGREEMENT MAY NOT APPLY TO YOU. 
+
+GENERAL 
+This Agreement constitutes the entire agreement and supersedes any prior agreement between Publisher and You concerning the Product. Publisher is not bound by any provision of any purchase order, or other document, unless Publisher specifically amends this Agreement. This Agreement cannot be amended, modified, or waived, unless the change is written and signed by an authorized corporate officer of Publisher. This Agreement is governed by the laws of the State of California, without regard to conflict of law principle. Flash © 2005 Macromedia TM Inc., QuickTime © 2005 Apple Computer, Inc., Internet Explorer  © 2005 Microsoft Corporation, Netscape  Communicator © Netscape  2000. All companies' rights reserved. 
+
+© 2008 Pearson Education, Inc., publishing as Benjamin Cummings.  ISBN 0-1313-5691-7

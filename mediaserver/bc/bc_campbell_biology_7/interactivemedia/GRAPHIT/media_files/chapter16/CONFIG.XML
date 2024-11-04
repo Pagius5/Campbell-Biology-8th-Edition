@@ -1,0 +1,6 @@
+<!-- Configuration file for Flash tutorials -->
+<TUTORIAL TITLE="Forestation Change">
+	<STEP SUBSTEP="1" STEPTITLE="Timber removal in the U.S." MOVIE="1_removal.swf" />
+	<STEP MOVIE="2_growth.swf" SUBSTEP="1" STEPTITLE="Forestation change in the U.S."/>
+	<STEP SUBSTEP="1" STEPTITLE="Global forestation change" MOVIE="3_global.swf"/>
+</TUTORIAL>

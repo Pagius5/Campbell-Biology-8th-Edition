@@ -1,0 +1,6 @@
+<!-- Configuration file for Flash tutorials -->
+<TUTORIAL TITLE="Animal Food Production Efficiency and Food Policy">
+	<STEP SUBSTEP="1" STEPTITLE="Graphing production efficiency" MOVIE="1_graphing.swf" />
+	<STEP SUBSTEP="1" STEPTITLE="Other measures of efficiency" MOVIE="2_efficiency.swf"/>
+	<STEP MOVIE="3_policy.swf" SUBSTEP="1" STEPTITLE="Efficiency and policy"/>
+</TUTORIAL>

@@ -1,0 +1,6 @@
+<!-- Configuration file for Flash tutorials -->
+<TUTORIAL TITLE="Prospects for Renewable Energy">
+	<STEP SUBSTEP="1" STEPTITLE="Current energy sources" MOVIE="1_sources.swf" />
+	<STEP SUBSTEP="1" STEPTITLE="Growth rate of renewables" MOVIE="2_rates.swf"/>
+	<STEP MOVIE="3_projections.swf" SUBSTEP="1" STEPTITLE="Projecting future energy sources"/>
+</TUTORIAL>

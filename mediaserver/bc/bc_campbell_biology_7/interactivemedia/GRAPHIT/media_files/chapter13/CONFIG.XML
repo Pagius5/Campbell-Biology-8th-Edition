@@ -1,0 +1,8 @@
+<!-- Configuration file for Flash tutorials -->
+<TUTORIAL TITLE="Global Fisheries and Overfishing">
+	<STEP MOVIE="1_capture.swf" SUBSTEP="1" STEPTITLE="Trends in global fish captures" />
+	<STEP MOVIE="2_undev.swf" SUBSTEP="1" STEPTITLE="Undeveloped fisheries"/>
+	<STEP MOVIE="3_fisheries.swf" SUBSTEP="1" STEPTITLE="Fisheries development stages"/>
+	<STEP MOVIE="4_area.swf" SUBSTEP="1" STEPTITLE="Area plot of fisheries development"/>
+	<STEP MOVIE="5_projections.swf" SUBSTEP="1" STEPTITLE="Fisheries in the future"/>
+</TUTORIAL>

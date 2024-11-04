@@ -1,0 +1,96 @@
+<HTML>
+<HEAD>
+	<TITLE>Diffusion and Osmosis: Factors Affecting Water Potential</TITLE>
+	<MAP NAME="contents">
+		<AREA SHAPE="RECT" COORDS="16,1, 117,14" HREF="intro.html">
+		<AREA SHAPE="RECT" COORDS="16,22, 117,33" HREF="concepts.html">
+		<AREA SHAPE="RECT" COORDS="16,41, 117,61" HREF="design.html">
+		<AREA SHAPE="RECT" COORDS="16,70, 117,80" HREF="analysis.html">
+		<AREA SHAPE="RECT" COORDS="16,88, 117,99" HREF="quiz-sa.html">
+	</MAP>
+	<SCRIPT LANGUAGE="Javascript" SRC="../../code/biocookie.js"></SCRIPT>
+<style type="text/css">
+BODY, P, TD, OL, UL, DD, DT, DL {font: 11px "Trebuchet MS", verdana, sans-serif; color:#222; margin:20px;}
+A, A:visited, .cg {text-decoration:underline; color:#369; font:inherit;}
+A:hover, A:visited:hover {text-decoration:none; color:#369;  font:inherit;}
+</style>
+</head>
+
+<BODY BGCOLOR="white">
+<B>Diffusion &amp; Osmosis</B><br>
+
+<TABLE BORDER="0" CELLPADDING="4" CELLSPACING="0" WIDTH="600">
+<TR>
+	<TD WIDTH="25" VALIGN="TOP">
+		<IMG SRC="../../images/spacer.gif" WIDTH="25" HEIGHT="1">
+	</TD>
+	<TD VALIGN="TOP" WIDTH="150">
+		<IMG SRC="../images/isgconts.gif" WIDTH="122" HEIGHT="113" BORDER="0" ALT="Contents" ISMAP USEMAP="#contents">
+	</TD>
+	<TD WIDTH="350" VALIGN="TOP">		
+		<FONT SIZE="+1"><B>Factors That Affect Water Potential</B></FONT>
+		<P>
+		The water potential of pure water in an open container is zero because there is no solute and the pressure in the container is zero.  Adding solute lowers the water potential.  When a solution is enclosed by a rigid cell wall, the movement of water into the cell will exert pressure on the cell wall.  This increase in pressure within the cell will raise the water potential.
+	</TD>
+</TR>
+<TR>
+	<TD WIDTH="25" VALIGN="TOP">
+		<BR>
+	</TD>
+	<TD COLSPAN="2" ALIGN="CENTER">
+		<IMG SRC="images/watpot.gif" BORDER="0" ALT="Water potential illustrated">
+	</TD>
+</TR>
+<TR>
+	<TD WIDTH="25" VALIGN="TOP">
+		<BR>
+	</TD>
+	<TD WIDTH ="150" VALIGN="BOTTOM">
+		<IMG SRC="../../images/spacer.gif" WIDTH="150" HEIGHT="1" BORDER="0">
+	</TD>
+	<TD WIDTH ="350" VALIGN="TOP">
+		Look again at the equation for water potential:
+		<P>
+		Water potential (<IMG SRC="images/psi.gif" HSPACE="1" BORDER="0" ALIGN="TOP">)  =<BR>
+		pressure potential (<IMG SRC="images/psip.gif" HSPACE="1" BORDER="0" ALIGN="TOP">) + solute potential (<IMG SRC="images/psis.gif" HSPACE="1" BORDER="0" ALIGN="TOP">)
+		<P>
+		<A NAME="problem"></A>
+		<FORM NAME="question1" ACTION='javascript:window.location.reload();' METHOD='post'>
+		<TABLE WIDTH="300" CELLPADDING="5" CELLSPACING="0" BORDER="1" BGCOLOR="#FFFFCC">
+		<TR>
+			<TD>
+				There are two components to water potential: solute concentration and pressure.  How do you think this fact affects the movement of water into and out of cells?  For example, can two solutions that differ in their solute concentration be at equilibrium in terms of water movement?  Can a solution with a molarity of 0.2 be in equilibrium with a solution with a molarity of 0.4?
+				<P>
+				<INPUT TYPE="radio" NAME="q1" VALUE="1" onClick='writeNumberedBioCookie("factors1", this.value);'> Yes <BR>
+				<INPUT TYPE="radio" NAME="q1" VALUE="2" onClick='writeNumberedBioCookie("factors1", this.value);'> No 
+				<P>
+		<SCRIPT LANGUAGE="Javascript"> 
+		gsCorrectAnswer1 = "1";
+		gsUserAnswer	 = getNumberedBioCookie("factors1");
+		if(gsUserAnswer == null) {
+			// First time into the page, or no choice selected		
+			document.write("<INPUT TYPE='IMAGE' SRC='../../images/checkans.gif' BORDER='0' ALT='Check Your Answers'>");
+		} else {
+			if(gsUserAnswer == gsCorrectAnswer1) {
+				document.write("<IMG SRC='../../images/check.gif' BORDER='0'> <FONT COLOR='#037550'>Correct!</FONT><BR>");		
+			    document.write("Two solutions will be at equilibrium when the water potential is the same in both solutions.  This does not mean that their solute concentrations must be the same, because in plant cells the pressure exerted by the rigid cell wall is a significant factor in determining the net movement of water.</FONT>");
+			} else {
+				document.write("<IMG SRC='../../images/x.gif' BORDER='0'> <FONT COLOR='#037550'><BR>");
+				document.write("Two solutions will be at equilibrium when the water potential is the same in both solutions.  This does not mean that their solute concentrations must be the same, because in plant cells the pressure exerted by the rigid cell wall is a significant factor in determining the net movement of water.</FONT>");
+			}
+			
+			var viChoiceIndex = eval(gsUserAnswer - 1);
+			document.question1.q1[viChoiceIndex].checked = true;
+		}
+		</SCRIPT></FORM>
+			</TD>
+		</TR>
+		</TABLE>
+		<P>
+		<IMG SRC="../../images/arrow.gif" BORDER="0" WIDTH="10" HEIGHT="10"> Continue to <A HREF="design.html">Design of the Experiments</A>.
+	</TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>

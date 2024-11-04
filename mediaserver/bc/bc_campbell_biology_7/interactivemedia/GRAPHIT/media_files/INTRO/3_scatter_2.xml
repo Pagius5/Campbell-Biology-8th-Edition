@@ -1,0 +1,6 @@
+<TEXT>
+	<P>Draw a graph of this data by pressing "Plot the Data."</P>
+	<P>Notice that there are no lines drawn between the points.  This type of graph is called a scatter plot: a simple placement of points for each data row with no lines connecting them.</P>
+	<P>In the graphs from Steps 1 and 2 there was a sequence through time from one point to another.  We used a line plot for those situations.  Measuring a variable that changes with distance from a fixed point would also call for a line plot.</P>
+	<P>For the data set at left we have no reason to assume any sequence between the points.  In fact, we don't know what year each point represents.  In this case, a scatter plot is appropriate.</P>
+</TEXT>

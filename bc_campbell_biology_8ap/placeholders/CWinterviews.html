@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Online Feature Only</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link type="text/css" href="../media/objects/326/334000/_skins_/P/places_blue/0_code/style.css" rel="stylesheet">
+<script type="text/javascript" src="../media/objects/326/334000/_skins_/P/places_blue/0_code/scripts.js"></script>
+</head>
+
+<script type="text/javascript">
+var disable_placeholders = 0;
+
+function goto_arg_link() {
+	location = unescape(location.href.substring(location.href.indexOf('?') + 1));
+}
+
+function toggle_placeholder() {
+	if (disable_placeholders = !disable_placeholders) {
+		document.cookie = 'skip=yes';
+	} else {
+		document.cookie = '';
+	}
+}
+
+if (document.cookie == 'skip=yes') {
+	goto_arg_link();
+} else {
+	document.writeln('<body bgcolor="#FFFFFF" text="#000000">');
+	document.writeln('<table width="500" border="0" cellspacing="1" cellpadding="10"');
+	document.writeln('<tr>');
+	document.writeln('<td valign="top"><img src="www.gif" alt="Online Feature Only" border="0"></td>');
+	document.writeln('<td valign="top"><div class="mainHeader">Campbell Interviews</div>Learn how scientists think and ehy they love what they do. Access 64 in-depth interviews with eminent biologists from all eight editions of Campbell/Reece, <i>Biology</i>.<br><br>This is an online feature only. If you are connected to the Internet, you can <a href="http://wps.aw.com/bc_campbell_biology_8ap/77/19733/5051709.cw/index.html" class="boldlink">log into the online companion website</a>.</td>');
+	document.writeln('</tr>');
+	document.writeln('</table>');
+	document.writeln('</body>');
+}
+</script>
+
+</html>

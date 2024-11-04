@@ -1,0 +1,11 @@
+<!-- Configuration file for Flash tutorials -->
+<TUTORIAL TITLE="An Introduction to Graphing">
+	<STEP MOVIE="1_intro.swf" SUBSTEP="1" TEXTFILE="1_intro_1.xml" STEPTITLE="What is a graph?"/>
+	<STEP MOVIE="2_line.swf" SUBSTEP="1" TEXTFILE="2_line_1.xml" STEPTITLE="What is a line plot?"/>
+	<STEP MOVIE="3_scatter.swf" SUBSTEP="1" TEXTFILE="3_scatter_1.xml" STEPTITLE="What is a scatter plot?"/>
+	<STEP MOVIE="4_bar.swf" SUBSTEP="1" TEXTFILE="4_bar_1.xml" STEPTITLE="What is a bar chart?"/>
+	<STEP MOVIE="5_review.swf" SUBSTEP="1" TEXTFILE="5_review_1.xml" STEPTITLE="Review graph types"/>
+	<STEP MOVIE="6_build_scatter.swf" SUBSTEP="1" TEXTFILE="6_build_scatter_1.xml" STEPTITLE="Draw your own graph"/>
+	<STEP MOVIE="7_build_bar.swf" SUBSTEP="1" TEXTFILE="7_build_bar_1.xml" STEPTITLE="Draw your own graph 2"/>
+	<STEP MOVIE="8_build_line.swf" SUBSTEP="1" TEXTFILE="8_build_line_1.xml" STEPTITLE="Graph scaling"/>
+</TUTORIAL>

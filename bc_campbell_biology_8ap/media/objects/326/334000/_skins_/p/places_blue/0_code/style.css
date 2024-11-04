@@ -1,0 +1,134 @@
+/* =========================================
+// This CSS file is for the AP version of c8e (with GradeBook):
+// http://wps.aw.com/bc_campbell_biology_8ap
+
+// There are separate CSS/JS files for each project!
+// (WebDevr Linda Young, 2007)
+========================================= */
+
+/****************************** Campbell, BIOLOGY 8e AP* Edition / WebDevr Linda Young */
+
+body, p, th, td, ul, ol, dl, h1, h2, .basicContent
+						{font:12px Arial; font-weight:400; color:#000000; line-height:15px;}
+
+.homepageTitle			{display:none;}
+
+.breadcrumbs			{font:bold 11px Arial; color:#FFFFFF; line-height:12px; text-decoration:none;}
+a.breadcrumbs:link		{font:bold 11px Arial; color:#FFFFFF; line-height:12px; text-decoration:underline;}
+a.breadcrumbs:visited	{font:bold 11px Arial; color:#FFFFFF; line-height:12px; text-decoration:underline;}
+a.breadcrumbs:active	{font:bold 11px Arial; color:#122C76; line-height:12px; text-decoration:underline;}
+a.breadcrumbs:hover		{font:bold 11px Arial; color:#122C76; line-height:12px; text-decoration:underline;}
+#breadcrumbDiv			{position:absolute; left:0px; top:0px; width:110%; height:20px; padding:3px 0px 3px 10px; background-color:#DC8828;}
+
+.footer					{font:bold 9px Arial; color:#666666; line-height:12px;}
+a.legalNote:link		{font:bold 9px Arial; color:#003399; line-height:12px; text-decoration:underline;}
+a.legalNote:visited		{font:bold 9px Arial; color:#003399; line-height:12px; text-decoration:underline;}
+a.legalNote:active		{font:bold 9px Arial; color:#DC8828; line-height:12px; text-decoration:none;}
+a.legalNote:hover		{font:bold 9px Arial; color:#DC8828; line-height:12px; text-decoration:none;}
+
+#contentDiv				{padding:20px 0px 0px 20px; width:100%; overflow:visible; background-color:#FFFFFF;}
+.contentHeader			{display:none;}
+.mainHeader, .head_chapter
+						{display:block; color:#006600; font:bold 16px Arial; padding-bottom:10px;}
+.head_etutorquiz, .head_mp3quiz, .head_dcvcquiz, .head_graphitquiz, .head_investigationquiz
+						{display:block; color:#006600; font:bold 14px Arial; padding-bottom:10px; font-style:italic;}
+
+/****************************** Chapter Guide / Quiz */
+.cgChapter				{display:block; color:#006600; font:bold 16px Arial; padding-bottom:10px;}
+.cgEbook				{display:block; padding-top:15px;}
+	.quizEbook			{}
+.cgList					{display:block; padding:5px 0px 0px 30px;}
+	.crList				{display:block; padding:5px 0px 0px 0px;}
+	.quizList			{}
+	/*.tocList			{display:block; padding:4px 0px 0px 30px;}*/
+	.tocList			{display:block; position:relative; width:384px; font:12px Arial; color:#0C3990; padding:0px 0px 0px 0px; margin:0px; border-bottom:1px solid #738DBC; border-left:1px solid #738DBC; border-right:1px solid #738DBC; background-color:#C1D8F2; text-decoration:none; white-space:nowrap;}
+   #eTutorTop #firstCell{display:block; width:384px; border-top:1px solid #738DBC;}
+.cgChapRev				{display:block; padding-top:25px;}
+
+a.toclink:link			{display:block; width:384px; font:12px Arial; color:#003399; line-height:16px; text-decoration:none; padding:2px 2px 4px 4px;}
+a.toclink:visited		{display:block; width:384px; font:12px Arial; color:#003399; line-height:16px; text-decoration:none; padding:2px 2px 4px 4px;}
+a.toclink:active		{display:block; width:384px; font:12px Arial; color:#DC8828; line-height:16px; text-decoration:none; padding:2px 2px 4px 4px;}
+a.toclink:hover			{display:block; width:384px; font:12px Arial; color:#000000; line-height:16px; text-decoration:none; padding:2px 2px 4px 4px; background-color:#999999;}
+
+.tocText				{text-align:right; padding-right:10px;}
+
+/****************************** Links */
+a.ebklink:link			{font:bold 12px Arial; color:#990033; line-height:16px; text-decoration:underline;}
+a.ebklink:visited		{font:bold 12px Arial; color:#990033; line-height:16px; text-decoration:underline;}
+a.ebklink:active		{font:bold 12px Arial; color:#DC8828; line-height:16px; text-decoration:underline;}
+a.ebklink:hover			{font:bold 12px Arial; color:#DC8828; line-height:16px; text-decoration:underline;}
+
+a.normlink:link			{font:12px Arial; color:#003399; line-height:16px; text-decoration:underline;}
+a.normlink:visited		{font:12px Arial; color:#003399; line-height:16px; text-decoration:underline;}
+a.normlink:active		{font:12px Arial; color:#DC8828; line-height:16px; text-decoration:underline;}
+a.normlink:hover		{font:12px Arial; color:#DC8828; line-height:16px; text-decoration:underline;}
+
+a.boldlink:link			{font:bold 12px Arial; color:#003399; line-height:16px; text-decoration:underline;}
+a.boldlink:visited		{font:bold 12px Arial; color:#003399; line-height:16px; text-decoration:underline;}
+a.boldlink:active		{font:bold 12px Arial; color:#DC8828; line-height:16px; text-decoration:underline;}
+a.boldlink:hover		{font:bold 12px Arial; color:#DC8828; line-height:16px; text-decoration:underline;}
+
+/****************************** Campbell Interviews */
+.itvWith				{font:bold 14px Arial; color:#FD7C3F; padding:15px 0px 0px 0px;}
+.itvPerson				{font:bold 18px Arial; color:#057E57; padding:0px 0px 15px 0px;}
+.itvBox					{display:block; width:290px; font:12px Arial; color:#DEE2A5; background-color:#057E57; padding:5px;}
+
+/****************************** FAQs */
+#faqDiv					{width:600px;}
+#faqUL					{list-style-type:none;}
+.faqAnswer				{list-style-type:none; color:#000000; margin:0px 0px 15px -40px;}
+
+
+/* ----- Global Module Items ----- 
+.box 				{display:block; width:600px; padding:10px; margin:0px; font:12px Arial; }
+.box a				{font:bold 12px Arial; color:#003399; text-decoration:underline; line-height:15px; }
+.box a:hover		{font:bold 12px Arial; color:#FF7300; text-decoration:none; line-height:15px; }
+
+/* ----- Breadcrumb related items ----- 
+						
+.linkingHostBreadcrumbs	{font-family:Arial; color:#805A2A; font-size:9px; line-height:12px; font-weight:500; }
+#linkingHostBreadcrumbTable	{position:absolute; left:8px; top:4px; }
+#linkingHostBreadcrumbDiv{position:absolute; left:0px; top:0px; width:100%; height:0px; z-index:1; overflow:visible; visibility:visible; background-color:#FFFFFF; }
+
+
+/* ----- Global Module Items ----- 
+.hintHeader			{font-family:Arial; color:#32459A; font-size:18px; line-height:22px; font-weight:800; }
+.hintSubHeader		{font-family:Arial; color:gray; font-size:14px; line-height:18px; font-weight:800; }
+.hintContent		{font-family:Arial; color:#353534; font-size:13px; line-height:18px; font-weight:600; }
+.hintLink			{font-family:Arial; color:#805A2A; font-size:10px; line-height:12px; font-weight:500; font-style:normal; }
+
+.Content			{font-family:Arial; color:#000000; font-size:12px; line-height:15px; font-weight:400; }
+.contentSubHeader	{font-family:Arial; color:gray; font-size:14px; line-height:18px; font-weight:800; }
+.randomAnswers		{font:11px Arial; color:#666666; font-weight:500; line-height:12px; font-style:italic; }
+.timerDetailText	{font-family:Arial; color:#32459a; font-size:11px; line-height:12px; font-weight:500; font-style:normal; }
+
+
+.problemTypeBkgd	{background-color:#FFFFFF; }
+.essayQuestions		{font:13px Arial; color:#353534; line-height:18px; }
+.trueQuestions		{font:13px Arial; color:#353534; line-height:18px; }
+.trueAnswer			{font:13px Arial; color:#353534; line-height:18px; }
+.multiChoiceQuestion{font:13px Arial; color:#353534; line-height:18px; }
+.multiChoiceAnswer	{font:13px Arial; color:#353534; line-height:18px; }
+.labelQuestion		{font-family:Arial; color:#353534; font-size:13px; line-height:18px; font-weight:600; }
+.labelTerm			{font-family:Arial; color:#353534; font-size:12px; line-height:16px; font-weight:600; background-color:transparent; }
+.labelAnswer		{font-family:Arial; color:black; font-size:10px; line-height:12px; font-weight:400; }
+.labelBkgd			{background-color:transparent; }
+.labelDivider		{background-color:#E1E1F1; }
+.fillBlankQuestion	{font-family:Arial; color:#353534; font-size:13px; line-height:18px; font-weight:600; }
+.fillBlankAnswer	{font-family:Arial; color:black; font-size:12px; line-height:18px; font-weight:400; }
+.webSearchIntro		{font-family:Arial; color:black; font-size:12px; line-height:15px; font-weight:400; }
+.webSearchBkgd		{background-color:#f5f5fb; }
+.webSearchTableColor{background-color:#F0F0F0; }
+.destLink			{font-family:Arial; color:#7682CC; font-size:12px; line-height:18px; font-weight:800; }
+
+/* ----- Group Items ----- 
+.groupIntro			{font-family:Arial; color:#000000; font-size:12px; line-height:15px; font-weight:400; }
+.groupLink			{font-family:Arial; color:#7682CC; font-size:12px; line-height:18px; font-weight:800; }
+
+/* ----- Search Items ----- 
+.searchLink			{font:bold 12px Arial; color:#32459a; line-height:18px; }
+.searchNumber		{font:bold 12px Arial; color:#32459a; line-height:18px; }
+.searchBreadCrumb	{font:bold 10px Arial; color:#7682CC; line-height:18px; }
+.search_no_match	{font:12px Arial; color:#000000; line-height:14px; font-weight:500; }
+
+*/

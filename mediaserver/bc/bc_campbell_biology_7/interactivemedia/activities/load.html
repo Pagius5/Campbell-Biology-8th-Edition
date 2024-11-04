@@ -1,0 +1,1084 @@
+<html>
+<head>
+<title>Activity</title>
+<script language="JavaScript">
+//************************
+//*** Activity Service ***
+//************************
+//A. Corbett 23-Jan-02. Revisited: M. Millares 26-Aug-04
+//--------------------
+//This framed document and script loads an activity
+//  and title into its frames based on the parameters passed
+//  in a query string.
+//It should be located at the root level of activities
+//  in the media package of the product whose activities
+//  it is loading.
+//Why? 
+//  1) We want to display activities from existing 
+//     products within new products
+//  2) We don't want the actnav drop-down list to appear,
+//     as that won't apply to the NEW product
+//  3) The JavaScript controlling activity navigation can
+//     only change contents of a frame that resides in
+//     the same domain as the product.
+//  4) We want to control the title displayed from the
+//     NEW product, not use the existing title.
+//***************
+//***Variables***
+//***************
+//productCode: This is the leading letter code for the product
+//  edit this as appropriate for product this ActivityService is 
+//  being deployed in.  May be empty.
+var chapterNum = "00"
+var orderNum = "00" 
+var activityTitle = "Activity Title"
+//*******************
+//*** main code   ***
+//*******************
+// call this code onLoad of frameset
+function runService()
+{
+	//parse the query string...display error if query string bad
+	if(!processQuery())
+	{
+		//display error message
+		htmlDoc = "<HTML><HEAD></HEAD><BODY bgcolor=\"#ffffff\">"
+		htmlDoc += "<h4>ERROR: Did not find expected parameters in query string.</h4>"
+		htmlDoc += "</BODY></HTML>"
+		frames.Title.document.open()
+		frames.Title.document.write(htmlDoc)
+		frames.Title.document.close()	
+	}
+	else
+	{
+		//load the requested activity
+		loadActivity()
+		//display the requested title
+		showTitle()
+	}
+}
+//****************************
+//*** process query string ***
+//****************************
+function processQuery()
+{
+	//grab the query string and strip the ?
+	query = new String(location.search)
+	query = query.slice(1)
+	//error if empty
+	if(query==""){return false}
+	//split query string on the ampersand
+	paramArray = query.split("&")
+	//error if less than two parameters
+	if(paramArray.length<2){return false}
+	//populate variables with the parameters
+	chapterNum = doubleDigit(paramArray[0])
+	orderNum = decodeOrdNum(paramArray[1])
+	
+	return true
+}
+//*************************
+//*** load the Activity ***
+//*************************
+function loadActivity()
+{
+	//load the GuideText, Media, and Step Nav for the activity
+	frames.GuideText.location = retrieveURL(chapterNum,orderNum) + "/st01/gt01.html"
+	frames.Media.location = retrieveURL(chapterNum,orderNum) + "/st01/media.html"
+	frames.Step.location = retrieveURL(chapterNum,orderNum) + "/st01/stepnav.html"
+	window.focus()
+}
+//******************************
+//*** display activity title ***
+//******************************
+function showTitle()
+{
+	//build and load the title frame
+	htmlDoc = "<HTML><HEAD></HEAD><BODY bgcolor=\"#ffffff\">"
+	htmlDoc += "<p style=\"font-family:verdana,arial,sans-serif;font-size:14px;font-weight:bold;\">" + activityTitle + "</p>"
+	htmlDoc += "</BODY></HTML>"
+	frames.Title.document.open()
+	frames.Title.document.write(htmlDoc)
+	frames.Title.document.close()	
+}
+
+//************************************************************************************
+//*** retrieves ChNum and adds a leading zero to single-digit entries ***
+//************************************************************************************
+function doubleDigit(chNum){
+	if (chNum.length < 2)
+		chNum = "0" + chNum
+		
+	return chNum
+}
+
+//************************************************************************************
+//*** retrieves root URL from Activity Table and resets the activityTitle variable ***
+//************************************************************************************
+function retrieveURL(chNum, ordNum)
+{
+	var code = String(chNum + ordNum)
+	
+	switch (code) {
+	// Enter ACTIVITY TABLE Here
+case "0101":
+  activityTitle = "The Levels of Life Card Game"
+  return "../activities_c6e/H01/H0101"
+  break
+case "0102":
+  activityTitle = "Energy Flow and Chemical Cycling "
+  return "L54/L5402"
+  break
+case "0103":
+  activityTitle = "Comparing Prokaryotic and Eukaryotic Cells"
+  return "../activities_c6e/H01/H0102"
+  break
+case "0104":
+  activityTitle = "Heritable Information: DNA"
+  return "../activities_c6e/H16/H1603"
+  break
+case "0105":
+  activityTitle = "Regulation: Negative and Positive Feedback"
+  return "../activities_c6e/H01/H0106"
+  break
+case "0106":
+  activityTitle = "Classification Schemes"
+  return "../activities_c6e/H01/H0107"
+  break
+case "0107":
+  activityTitle = "Form Fits Function: Cells "
+  return "../activities_c6e/H01/H0104"
+  break
+case "0108":
+  activityTitle = "Science, Technology, and Society: DDT"
+  return "../activities_c6e/H01/H0109"
+  break
+case "0201":
+  activityTitle = "Structure of the Atomic Nucleus"
+  return "../activities_c6e/H02/H0202"
+  break
+case "0202":
+  activityTitle = "Electron Arrangement"
+  return "../activities_c6e/H02/H0203"
+  break
+case "0203":
+  activityTitle = "Build an Atom"
+  return "../activities_c6e/H02/H0204"
+  break
+case "0204":
+  activityTitle = "Covalent Bonds"
+  return "../activities_c6e/H02/H0205"
+  break
+case "0205":
+  activityTitle = "Nonpolar and Polar Molecules"
+  return "../activities_c6e/H02/H0206"
+  break
+case "0206":
+  activityTitle = "Ionic Bonds"
+  return "../activities_c6e/H02/H0207"
+  break
+case "0207":
+  activityTitle = "Hydrogen Bonds"
+  return "../activities_c6e/H02/H0208"
+  break
+case "0301":
+  activityTitle = "Polarity of Water"
+  return "../activities_c6e/H03/H0301"
+  break
+case "0302":
+  activityTitle = "Cohesion of Water"
+  return "../activities_c6e/H03/H0302"
+  break
+case "0303":
+  activityTitle = "Dissociation of Water Molecules   "
+  return "../activities_c6e/H03/H0303"
+  break
+case "0304":
+  activityTitle = "Acids, Bases, and pH"
+  return "../activities_c6e/H03/H0304"
+  break
+case "0401":
+  activityTitle = "Diversity of Carbon-Based Molecules "
+  return "../activities_c6e/H04/H0401"
+  break
+case "0402":
+  activityTitle = "Isomers"
+  return "../activities_c6e/H04/H0402"
+  break
+case "0403":
+  activityTitle = "Functional Groups "
+  return "../activities_c6e/H04/H0403"
+  break
+case "0501":
+  activityTitle = "Making and Breaking Polymers"
+  return "../activities_c6e/H05/H0501"
+  break
+case "0502":
+  activityTitle = "Models of Glucose"
+  return "../activities_c6e/H05/H0502"
+  break
+case "0503":
+  activityTitle = "Carbohydrates"
+  return "../activities_c6e/H05/H0503"
+  break
+case "0504":
+  activityTitle = "Lipids"
+  return "../activities_c6e/H05/H0504"
+  break
+case "0505":
+  activityTitle = "Protein Functions   "
+  return "../activities_c6e/H05/H0505"
+  break
+case "0506":
+  activityTitle = "Protein Structure  "
+  return "../activities_c6e/H05/H0506"
+  break
+case "0507":
+  activityTitle = "Nucleic Acid Functions  "
+  return "../activities_c6e/H05/H0507"
+  break
+case "0508":
+  activityTitle = "Nucleic Acid Stucture  "
+  return "../activities_c6e/H05/H0508"
+  break
+case "0601":
+  activityTitle = "Metric System Review"
+  return "../activities_c6e/H07/H0701"
+  break
+case "0602":
+  activityTitle = "Prokaryotic Cell Structure and Function"
+  return "../activities_c6e/H07/H0702"
+  break
+case "0603":
+  activityTitle = "Comparing Prokaryotic and Eukaryotic Cells"
+  return "../activities_c6e/H07/H0703"
+  break
+case "0604":
+  activityTitle = "Build an Animal Cell and a Plant Cell"
+  return "../activities_c6e/H07/H0704"
+  break
+case "0605":
+  activityTitle = "Role of the Nucleus and Ribosomes in Protein Synthesis"
+  return "../activities_c6e/H07/H0705"
+  break
+case "0606":
+  activityTitle = "The Endomembrane System"
+  return "../activities_c6e/H07/H0706"
+  break
+case "0607":
+  activityTitle = "Build a Chloroplast and a Mitochondrion  "
+  return "../activities_c6e/H07/H0707"
+  break
+case "0608":
+  activityTitle = "Cilia and Flagella "
+  return "../activities_c6e/H07/H0708"
+  break
+case "0609":
+  activityTitle = "Cell Junctions"
+  return "../activities_c6e/H07/H0709"
+  break
+case "0610":
+  activityTitle = "Review: Animal Cell Structure and Function"
+  return "../activities_c6e/H07/H0710"
+  break
+case "0611":
+  activityTitle = "Review: Plant Cell Structure and Function"
+  return "../activities_c6e/H07/H0711"
+  break
+case "0701":
+  activityTitle = "Membrane Structure "
+  return "../activities_c6e/H08/H0801"
+  break
+case "0702":
+  activityTitle = "Selective Permeability of Membranes "
+  return "../activities_c6e/H08/H0802"
+  break
+case "0703":
+  activityTitle = "Diffusion"
+  return "../activities_c6e/H08/H0803"
+  break
+case "0704":
+  activityTitle = "Osmosis and Water Balance in Cells "
+  return "../activities_c6e/H08/H0804"
+  break
+case "0705":
+  activityTitle = "Facilitated Diffusion "
+  return "../activities_c6e/H08/H0805"
+  break
+case "0706":
+  activityTitle = "Active Transport  "
+  return "../activities_c6e/H08/H0806"
+  break
+case "0707":
+  activityTitle = "Exocytosis and Endocytosis  "
+  return "../activities_c6e/H08/H0807"
+  break
+case "0801":
+  activityTitle = "Energy Transformations  "
+  return "L08/L0801"
+  break
+case "0802":
+  activityTitle = "The Structure of ATP"
+  return "../activities_c6e/H06/H0602"
+  break
+case "0803":
+  activityTitle = "Chemical Reactions and ATP"
+  return "../activities_c6e/H06/H0603"
+  break
+case "0804":
+  activityTitle = "How Enzymes Work"
+  return "../activities_c6e/H06/H0604"
+  break
+case "0901":
+  activityTitle = "Build a Chemical Cycling System "
+  return "../activities_c6e/H09/H0901"
+  break
+case "0902":
+  activityTitle = "Overview of Cellular Respiration "
+  return "L09/L0902"
+  break
+case "0903":
+  activityTitle = "Glycolysis"
+  return "../activities_c6e/H09/H0903"
+  break
+case "0904":
+  activityTitle = "The Citric Acid Cycle"
+  return "L09/L0904"
+  break
+case "0905":
+  activityTitle = "Electron Transport"
+  return "L09/L0905"
+  break
+case "0906":
+  activityTitle = "Fermentation"
+  return "../activities_c6e/H09/H0906"
+  break
+case "1001":
+  activityTitle = "The Sites of Photosynthesis"
+  return "../activities_c6e/H10/H1001"
+  break
+case "1002":
+  activityTitle = "Overview of Photosynthesis"
+  return "../activities_c6e/H10/H1002"
+  break
+case "1003":
+  activityTitle = "Light Energy and Pigments"
+  return "L10/L1003"
+  break
+case "1004":
+  activityTitle = "The Light Reactions  "
+  return "../activities_c6e/H10/H1004"
+  break
+case "1005":
+  activityTitle = "The Calvin Cycle"
+  return "../activities_c6e/H10/H1005"
+  break
+case "1006":
+  activityTitle = "Photosynthesis in Dry Climates "
+  return "L10/L1006"
+  break
+case "1101":
+  activityTitle = "Overview of Cell Signaling"
+  return "L11/L1101"
+  break
+case "1102":
+  activityTitle = "Reception"
+  return "L11/L1102"
+  break
+case "1103":
+  activityTitle = "Signal Transduction Pathways  "
+  return "L11/L1103"
+  break
+case "1104":
+  activityTitle = "Cellular Responses "
+  return "L11/L1104"
+  break
+case "1105":
+  activityTitle = "Build a Signaling Pathway  "
+  return "L11/L1105"
+  break
+case "1201":
+  activityTitle = "Roles of Cell Division "
+  return "../activities_c6e/H12/H1201"
+  break
+case "1202":
+  activityTitle = "The Cell Cycle  "
+  return "../activities_c6e/H12/H1202"
+  break
+case "1203":
+  activityTitle = "Mitosis and Cytokinesis Animation "
+  return "../activities_c6e/H12/H1203"
+  break
+case "1204":
+  activityTitle = "Mitosis and Cytokinesis Video "
+  return "L12/L1204"
+  break
+case "1205":
+  activityTitle = "Causes of Cancer "
+  return "../activities_c6e/H12/H1205"
+  break
+case "1301":
+  activityTitle = "Asexual and Sexual Life Cycles"
+  return "../activities_c6e/H13/H1301"
+  break
+case "1302":
+  activityTitle = "Meiosis Animation"
+  return "../activities_c6e/H13/H1302"
+  break
+case "1303":
+  activityTitle = "Origins of Genetic Variation"
+  return "../activities_c6e/H13/H1303"
+  break
+case "1401":
+  activityTitle = "Monohybrid Cross "
+  return "../activities_c6e/H14/H1401"
+  break
+case "1402":
+  activityTitle = "Dihybrid Cross"
+  return "../activities_c6e/H14/H1402"
+  break
+case "1403":
+  activityTitle = "Gregor's Garden"
+  return "../activities_c6e/H14/H1403"
+  break
+case "1404":
+  activityTitle = "Incomplete Dominance"
+  return "../activities_c6e/H14/H1404"
+  break
+case "1501":
+  activityTitle = "Linked Genes and Crossing Over"
+  return "../activities_c6e/H15/H1501"
+  break
+case "1502":
+  activityTitle = "Sex-Linked Genes"
+  return "../activities_c6e/H15/H1502"
+  break
+case "1503":
+  activityTitle = "Polyploid Plants"
+  return "../activities_c6e/H15/H1503"
+  break
+case "1601":
+  activityTitle = "The Hershey-Chase Experiment"
+  return "../activities_c6e/H16/H1601"
+  break
+case "1602":
+  activityTitle = "DNA and RNA Structure "
+  return "../activities_c6e/H16/H1602"
+  break
+case "1603":
+  activityTitle = "DNA Double Helix"
+  return "../activities_c6e/H16/H1603"
+  break
+case "1604":
+  activityTitle = "DNA Replication: An Overview"
+  return "../activities_c6e/H16/H1604"
+  break
+case "1605":
+  activityTitle = "DNA Replication: A Closer Look"
+  return "../activities_c6e/H16/H1605"
+  break
+case "1606":
+  activityTitle = "DNA Replication: A Review"
+  return "../activities_c6e/H16/H1606"
+  break
+case "1701":
+  activityTitle = "Overview of Protein Synthesis"
+  return "../activities_c6e/H17/H1701"
+  break
+case "1702":
+  activityTitle = "Transcription"
+  return "L17/L1702"
+  break
+case "1703":
+  activityTitle = "RNA Processing"
+  return "L17/L1703"
+  break
+case "1704":
+  activityTitle = "Translation"
+  return "../activities_c6e/H17/H1704"
+  break
+case "1801":
+  activityTitle = "Simplified Viral Reproductive Cycle"
+  return "../activities_c6e/H18/H1801"
+  break
+case "1802":
+  activityTitle = "Phage Lytic Cycle"
+  return "../activities_c6e/H18/H1802"
+  break
+case "1803":
+  activityTitle = "Phage Lysogenic and Lytic Cycles  "
+  return "../activities_c6e/H18/H1803"
+  break
+case "1804":
+  activityTitle = "Retrovirus (HIV) Reproductive Cycle"
+  return "../activities_c6e/H18/H1804"
+  break
+case "1805":
+  activityTitle = "The lac Operon in E. coli"
+  return "../activities_c6e/H18/H1805"
+  break
+case "1901":
+  activityTitle = "DNA Packing"
+  return "../activities_c6e/H19/H1901"
+  break
+case "1902":
+  activityTitle = "Overview: Control of Gene Expression"
+  return "../activities_c6e/H19/H1903"
+  break
+case "1903":
+  activityTitle = "Control of Transcription "
+  return "../activities_c6e/H19/H1904"
+  break
+case "1904":
+  activityTitle = "Post-Transcriptional Control Mechanisms"
+  return "L19/L1904"
+  break
+case "1905":
+  activityTitle = "Review: Control of Gene Expression"
+  return "../activities_c6e/H19/H1906"
+  break
+case "1906":
+  activityTitle = "Causes of Cancer "
+  return "../activities_c6e/H12/H1205"
+  break
+case "2001":
+  activityTitle = "Applications of DNA Technology"
+  return "../activities_c6e/H20/H2001"
+  break
+case "2002":
+  activityTitle = "Restriction Enzymes"
+  return "../activities_c6e/H20/H2002"
+  break
+case "2003":
+  activityTitle = "Cloning a Gene in Bacteria"
+  return "../activities_c6e/H20/H2003"
+  break
+case "2004":
+  activityTitle = "Gel Electrophoresis of DNA"
+  return "../activities_c6e/H20/H2004"
+  break
+case "2005":
+  activityTitle = "Analyzing DNA Fragments Using Gel Electrophoresis"
+  return "../activities_c6e/H20/H2005"
+  break
+case "2006":
+  activityTitle = "The Human Genome Project: Genes on Human Chromosome 17"
+  return "../activities_c6e/H20/H2006"
+  break
+case "2007":
+  activityTitle = "DNA Fingerprinting "
+  return "../activities_c6e/H20/H2007"
+  break
+case "2008":
+  activityTitle = "Making Decisions About DNA Technology: Golden Rice"
+  return "../activities_c6e/H38/H3803"
+  break
+case "2101":
+  activityTitle = "Signal Transduction Pathways "
+  return "L21/L2101"
+  break
+case "2102":
+  activityTitle = "Role of bicoid Gene in Drosophila Development"
+  return "L21/L2102"
+  break
+case "2201":
+  activityTitle = "Darwin and the Galapagos Islands "
+  return "../activities_c6e/H22/H2202"
+  break
+case "2202":
+  activityTitle = "The Voyage of the <i>Beagle</i>: Darwin's Trip Around the World  "
+  return "../activities_c6e/H22/H2204"
+  break
+case "2203":
+  activityTitle = "Reconstructing Forelimbs"
+  return "../activities_c6e/H22/H2206"
+  break
+case "2301":
+  activityTitle = "Causes of Evolutionary Change"
+  return "../activities_c6e/H23/H2301"
+  break
+case "2302":
+  activityTitle = "Genetic Variation from Sexual Recombination"
+  return "../activities_c6e/H23/H2302"
+  break
+case "2401":
+  activityTitle = "Overview of Macroevolution "
+  return "../activities_c6e/H24/H2401"
+  break
+case "2402":
+  activityTitle = "Allometric Growth  "
+  return "../activities_c6e/H24/H2402"
+  break
+case "2501":
+  activityTitle = "A Scrolling Geologic Record"
+  return "L25/L2501"
+  break
+case "2502":
+  activityTitle = "Classification Schemes"
+  return "../activities_c6e/H26/H2603"
+  break
+case "2601":
+  activityTitle = "The History of Life"
+  return "L26/L2601"
+  break
+case "2602":
+  activityTitle = "The History of Life "
+  return "L26/L2602"
+  break
+case "2603":
+  activityTitle = "Classification Schemes "
+  return "../activities_c6e/H26/H2603"
+  break
+case "2701":
+  activityTitle = "Prokaryotic Cell Structure and Function  "
+  return "../activities_c6e/H27/H2701"
+  break
+case "2702":
+  activityTitle = "Classification of Prokaryotes "
+  return "L27/L2702"
+  break
+case "2801":
+  activityTitle = "Tentative Phylogeny of Eukaryotes"
+  return "L28/L2801"
+  break
+case "2901":
+  activityTitle = "Terrestrial Adaptations of Plants"
+  return "../activities_c6e/H29/H2902"
+  break
+case "2902":
+  activityTitle = "Highlights of Plant Phylogeny"
+  return "L29/L2902"
+  break
+case "2903":
+  activityTitle = "Moss Life Cycle"
+  return "../activities_c6e/H29/H2903"
+  break
+case "2904":
+  activityTitle = "Fern Life Cycle  "
+  return "L29/L2904"
+  break
+case "3001":
+  activityTitle = "Pine Life Cycle"
+  return "L30/L3001"
+  break
+case "3002":
+  activityTitle = "Angiosperm Life Cycle "
+  return "../activities_c6e/H30/H3002"
+  break
+case "3101":
+  activityTitle = "Fungal Reproduction and Nutrition "
+  return "../activities_c6e/H31/H3101"
+  break
+case "3102":
+  activityTitle = "Fungal Life Cycles"
+  return "../activities_c6e/H31/H3102"
+  break
+case "3201":
+  activityTitle = "Animal Phylogenetic Tree"
+  return "L32/L3201"
+  break
+case "3301":
+  activityTitle = "Characteristics of Invertebrates"
+  return "../activities_c6e/H33/H3301"
+  break
+case "3401":
+  activityTitle = "Characteristics of Chordates "
+  return "L34/L3401"
+  break
+case "3402":
+  activityTitle = "Primate Diversity"
+  return "../activities_c6e/H34/H3402"
+  break
+case "3403":
+  activityTitle = "Human Evolution "
+  return "L34/L3403"
+  break
+case "3501":
+  activityTitle = "Root, Stem, and Leaf Sections"
+  return "L35/L3501"
+  break
+case "3502":
+  activityTitle = "Primary and Secondary Growth  "
+  return "L35/L3502"
+  break
+case "3601":
+  activityTitle = "Transport of Xylem Sap"
+  return "../activities_c6e/H36/H3601"
+  break
+case "3602":
+  activityTitle = "Translocation of Phloem Sap"
+  return "../activities_c6e/H36/H3602"
+  break
+case "3701":
+  activityTitle = "How Plants Obtain Minerals from Soil"
+  return "../activities_c6e/H37/H3701"
+  break
+case "3702":
+  activityTitle = "The Nitrogen Cycle"
+  return "../activities_c6e/H37/H3702"
+  break
+case "3801":
+  activityTitle = "Angiosperm Life Cycle"
+  return "../activities_c6e/H38/H3801"
+  break
+case "3802":
+  activityTitle = "Seed and Fruit Development"
+  return "L38/L3802"
+  break
+case "3803":
+  activityTitle = "Making Decisions About DNA Technology: Golden Rice"
+  return "../activities_c6e/H38/H3803"
+  break
+case "3901":
+  activityTitle = "Leaf Abscission  "
+  return "../activities_c6e/H39/H3901"
+  break
+case "3902":
+  activityTitle = "Flowering Lab  "
+  return "../activities_c6e/H39/H3902"
+  break
+case "4001":
+  activityTitle = "Overview of Animal Tissues"
+  return "../activities_c6e/H40/H4001"
+  break
+case "4002":
+  activityTitle = "Epithelial Tissue"
+  return "L40/L4002"
+  break
+case "4003":
+  activityTitle = "Connective Tissue "
+  return "../activities_c6e/H40/H4003"
+  break
+case "4004":
+  activityTitle = "Nervous Tissue "
+  return "../activities_c6e/H40/H4004"
+  break
+case "4005":
+  activityTitle = "Muscle Tissue "
+  return "../activities_c6e/H40/H4005"
+  break
+case "4006":
+  activityTitle = "Regulation: Negative and Positive Feedback"
+  return "../activities_c6e/H01/H0106"
+  break
+case "4101":
+  activityTitle = "Feeding Mechanisms of Animals"
+  return "../activities_eb2/K22/K2201"
+  break
+case "4102":
+  activityTitle = "Case Studies of Nutritional Disorders"
+  return "../activities_eb2/K22/K2204"
+  break
+case "4103":
+  activityTitle = "Analyzing Food Labels  "
+  return "../activities_eb2/K22/K2203"
+  break
+case "4104":
+  activityTitle = "Digestive System Function "
+  return "L41/L4104"
+  break
+case "4105":
+  activityTitle = "Hormonal Control of Digestion "
+  return "../activities_c6e/H41/H4102"
+  break
+case "4201":
+  activityTitle = "Mammalian Cardiovascular System Structure"
+  return "../activities_c6e/H42/H4201"
+  break
+case "4202":
+  activityTitle = "Path of Blood Flow in Mammals "
+  return "../activities_c6e/H42/H4202"
+  break
+case "4203":
+  activityTitle = "Mammalian Cardiovascular System Function "
+  return "../activities_c6e/H42/H4203"
+  break
+case "4204":
+  activityTitle = "The Human Respiratory System"
+  return "../activities_c6e/H42/H4204"
+  break
+case "4205":
+  activityTitle = "Transport of Respiratory Gases "
+  return "../activities_c6e/H42/H4205"
+  break
+case "4301":
+  activityTitle = "Immune Responses "
+  return "../activities_c6e/H43/H4301"
+  break
+case "4302":
+  activityTitle = "HIV Reproductive Cycle "
+  return "../activities_c6e/H43/H4302"
+  break
+case "4401":
+  activityTitle = "Structure of the Human Excretory System "
+  return "../activities_c6e/H44/H4401"
+  break
+case "4402":
+  activityTitle = "Nephron Function "
+  return "../activities_c6e/H44/H4402"
+  break
+case "4403":
+  activityTitle = "Control of Water Reabsorption "
+  return "../activities_c6e/H44/H4403"
+  break
+case "4501":
+  activityTitle = "Overview of Cell Signaling"
+  return "L45/L4501"
+  break
+case "4502":
+  activityTitle = "Peptide Hormone Action"
+  return "../activities_c6e/H45/H4502"
+  break
+case "4503":
+  activityTitle = "Steroid Hormone Action"
+  return "../activities_c6e/H45/H4503"
+  break
+case "4504":
+  activityTitle = "Human Endocrine Glands and Hormones"
+  return "../activities_c6e/H45/H4504"
+  break
+case "4601":
+  activityTitle = "Reproductive System of the Human Male "
+  return "../activities_c6e/H46/H4601"
+  break
+case "4602":
+  activityTitle = "Reproductive System of the Human Female"
+  return "../activities_c6e/H46/H4602"
+  break
+case "4701":
+  activityTitle = "Sea Urchin Development "
+  return "L47/L4701"
+  break
+case "4702":
+  activityTitle = "Frog Development"
+  return "L47/L4702"
+  break
+case "4801":
+  activityTitle = "Neuron Structure"
+  return "../activities_c6e/H48/H4801"
+  break
+case "4802":
+  activityTitle = "Nerve Signals: Action Potentials"
+  return "../activities_c6e/H48/H4802"
+  break
+case "4803":
+  activityTitle = "Signal Transmission at a Chemical Synapse"
+  return "../activities_c6e/H48/H4803"
+  break
+case "4901":
+  activityTitle = "Structure and Function of the Eye "
+  return "../activities_c6e/H49/H4901"
+  break
+case "4902":
+  activityTitle = "Human Skeleton "
+  return "../activities_c6e/H49/H4902"
+  break
+case "4903":
+  activityTitle = "Skeletal Muscle Structure"
+  return "../activities_c6e/H49/H4903"
+  break
+case "4904":
+  activityTitle = "Muscle Contraction "
+  return "../activities_c6e/H49/H4904"
+  break
+case "5001":
+  activityTitle = "Science, Technology, and Society: DDT"
+  return "../activities_c6e/H50/H5001"
+  break
+case "5002":
+  activityTitle = "Adaptations to Biotic and Abiotic Factors"
+  return "../activities_c6e/H50/H5002"
+  break
+case "5003":
+  activityTitle = "Aquatic Biomes"
+  return "../activities_c6e/H50/H5003"
+  break
+case "5004":
+  activityTitle = "Terrestrial Biomes"
+  return "L50/L5004"
+  break
+case "5101":
+  activityTitle = "Honeybee Waggle Dance Video"
+  return "L51/L5101"
+  break
+case "5201":
+  activityTitle = "Techniques for Estimating Population Density and Size"
+  return "../activities_c6e/H52/H5201"
+  break
+case "5202":
+  activityTitle = "Investigating Survivorship Curves "
+  return "../activities_c6e/H52/H5202"
+  break
+case "5203":
+  activityTitle = "Human Population Growth "
+  return "../activities_c6e/H52/H5203"
+  break
+case "5204":
+  activityTitle = "Analyzing Age-Structure Pyramids"
+  return "../activities_c6e/H52/H5204"
+  break
+case "5301":
+  activityTitle = "Interspecific Interactions  "
+  return "../activities_c6e/H53/H5301"
+  break
+case "5302":
+  activityTitle = "Food Webs"
+  return "../activities_c6e/H53/H5302"
+  break
+case "5303":
+  activityTitle = "Primary Succession "
+  return "../activities_c6e/H53/H5303"
+  break
+case "5304":
+  activityTitle = "Exploring Island Biogeography"
+  return "../activities_c6e/H53/H5304"
+  break
+case "5401":
+  activityTitle = "Pyramids of Production "
+  return "../activities_c6e/H54/H5401"
+  break
+case "5402":
+  activityTitle = "Energy Flow and Chemical Cycling "
+  return "L54/L5402"
+  break
+case "5403":
+  activityTitle = "The Carbon Cycle "
+  return "../activities_c6e/H54/H5403"
+  break
+case "5404":
+  activityTitle = "The Nitrogen Cycle"
+  return "../activities_c6e/H37/H3702"
+  break
+case "5405":
+  activityTitle = "Water Pollution from Nitrates"
+  return "../activities_c6e/H54/H5405"
+  break
+case "5406":
+  activityTitle = "The Greenhouse Effect"
+  return "../activities_c6e/H54/H5406"
+  break
+case "5501":
+  activityTitle = "Madagascar and the Biodiversity Crisis"
+  return "../activities_c6e/H55/H5501"
+  break
+case "5502":
+  activityTitle = "Introduced Species: Fire Ants"
+  return "../activities_c6e/H55/H5502"
+  break
+case "5503":
+  activityTitle = "Conservation Biology Review"
+  return "../activities_c6e/H55/H5503"
+  break
+	// End ACTIVITY TABLE
+	default:
+		document.location = "error.html" 
+		break
+	}
+}
+
+function decodeOrdNum(code) 
+{
+  //orderNum code table
+  switch (code) {
+	case "A":
+		orderNum = "01";
+		break;
+	case "B":
+		orderNum = "02";
+		break;
+	case "C":
+		orderNum = "03";
+		break;
+	case "D":
+		orderNum = "04";
+		break;
+	case "E":
+		orderNum = "05";
+		break;
+	case "F":
+		orderNum = "06";
+		break;
+	case "G":
+		orderNum = "07";
+		break;
+	case "H":
+		orderNum = "08";
+		break;
+	case "I":
+		orderNum = "09";
+		break;
+	case "J":
+		orderNum = "10";
+		break;
+	case "K":
+		orderNum = "11";
+		break;
+	case "L":
+		orderNum = "12";
+		break;		
+	case "M":
+		orderNum = "13";
+		break;	
+	case "L":
+		orderNum = "14";
+		break;
+	case "N":
+		orderNum = "15";
+		break;
+	case "O":
+		orderNum = "16";
+		break;
+	case "P":
+		orderNum = "17";
+		break;
+	case "Q":
+		orderNum = "18";
+		break;
+	case "R":
+		orderNum = "19";
+		break;
+	case "S":
+		orderNum = "20";
+		break;
+	case "T":
+		orderNum = "21";
+		break;
+	case "U":
+		orderNum = "22";
+		break;
+	case "V":
+		orderNum = "23";
+		break;
+	case "W":
+		orderNum = "24";
+		break;
+	case "X":
+		orderNum = "25";
+		break;
+	case "Y":
+		orderNum = "26";
+		break;
+	case "Z":
+		orderNum = "12";
+		break;
+  }
+  return orderNum
+}
+
+</script>
+<frameset cols="450, *" border="0" framespacing="0" frameborder="0" onLoad="runService()">
+    <frameset rows="50,*" border="0" framespacing="0" frameborder="0">
+        <frame src="blank.html" name="Title" noresize scrolling="no">
+        <frame src="blank.html" name="Media" noresize scrolling="no">
+    </frameset>
+    <frameset rows="50,*" border="0" framespacing="0" frameborder="0">
+        <frame src="blank.html" name="Step" noresize scrolling="no">
+        <frame src="blank.html" name="GuideText" noresize scrolling="auto">
+    </frameset>
+
+</frameset>
+</head>
+<noframes>You must have a frames-capable browser to view this content.</noframes>
+</html>
+
+

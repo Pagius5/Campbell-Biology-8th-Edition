@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<title>Population Genetics: Sample Problem 3</title>
+		<script language="Javascript" src="../../code/biocookie.js"></script>
+	<style type="text/css">
+BODY, P, TD, OL, UL, DD, DT, DL {font: 11px "Trebuchet MS", verdana, sans-serif; color:#222; margin:20px;}
+A, A:visited, .cg {text-decoration:underline; color:#369; font:inherit;}
+A:hover, A:visited:hover {text-decoration:none; color:#369;  font:inherit;}
+</style>
+</head>
+
+<body bgcolor="white">
+
+<b>Population Genetics</b><br>
+
+<table border="0" width="600" cellpadding="4" cellspacing="0">
+	<tr>
+		<td width="25" valign="top">
+			<img src="../../images/spacer.gif" width="25" height="1">
+		</td>
+		<td width="150" valign="top">
+			<img src="../images/isgconts.gif" width="122" height="113" border="0" alt="Contents" ismap usemap="#contents">
+			<map name="contents">
+				<area shape="rect" coords="16,1,117,14" href="intro.html">
+				<area shape="rect" coords="16,22,117,33" href="concepts.html">
+				<area shape="rect" coords="16,41,117,61" href="design.html">
+				<area shape="rect" coords="16,70,117,80" href="analysis.html">
+				<area shape="rect" coords="16,88,117,99" href="quiz-sa.html">
+			</map>
+		</td>
+		<td width="350" valign="top"><font size="4"><b>Sample Problem 3</b></font> 
+		<p>
+			<table width="350" border="1" cellpadding="3" cellspacing="0" bgcolor="#ffffcc">
+				<tr>
+					<td width="350">
+						<a name="q1"></a>
+						The Hardy-Weinberg equation is useful for predicting the percent
+						of a human population that may be heterozygous carriers of recessive
+						alleles for certain genetic diseases. Phenylketonuria (PKU) is
+						a human metabolic disorder that results in mental retardation
+						if it is untreated in infancy. In the United States, one out of
+						approximately 10,000 babies is born with the disorder. Approximately
+						what percent of the population are heterozygous carriers of the
+						recessive PKU allele? 
+						<p>If you need help, look back at the <a href="hardwein.html">Hardy-Weinberg equation</a>.
+						<p>
+						<script language="Javascript">
+						gsUserAnswer = getNumberedBioCookie("samprob31");
+						if(gsUserAnswer == null) {
+							// First time into the page, or no text in text area
+							document.write("<FORM NAME='q1' ACTION='javascript:window.location.reload();' METHOD='post'>");
+							document.write("<INPUT TYPE='text' NAME='q1box' SIZE='25' VALUE='' onchange='writeNumberedBioCookie(\"samprob31\",this.value);'><BR>");
+							document.write("<INPUT TYPE='image' SRC='../../images/checkans.gif' ALT='Check Answer' BORDER='0' NAME='CheckAnswer'><P>");
+							document.write("</FORM>");
+						} else {
+							// if there is text in the text area and the user hit the submit button
+							document.write("<P><B>Your answer:</B> " + gsUserAnswer);
+							document.write("<P><FONT COLOR='#037550'><B>Answer:</B>");
+							document.write("Approximately 2% of the U.S. population carries the PKU allele.<BR>");
+							document.write("Calculation:<br>");
+							document.write("<BR><I>q</I><SUP>2</SUP>= 1/10,000 = 0.0001<BR>");
+							document.write("<I>q</I>   =<IMG SRC='images/01sqroot.gif' BORDER='0'> = 0.01<BR>");
+							document.write("<I>p</I> = 1 - <I>q</I> = 1 - 0.01 = 0.99 <BR>");
+							document.write("The carriers are heterozygous.  Therefore,  2<I>pq</I> = 2 (0.99) (0.01) = 0.0198= 1.98%</FONT>");
+						} 
+						</script>
+					</td>
+				</tr>
+			</table>
+			<p><img src="../../images/arrow.gif" border="0" width="10" height="10"> Continue to <a href="allvgen.html">Allelic Frequency vs. Genotypic Frequency</a>.
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>

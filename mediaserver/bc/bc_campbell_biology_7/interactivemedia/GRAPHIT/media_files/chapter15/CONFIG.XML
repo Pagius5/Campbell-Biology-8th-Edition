@@ -1,0 +1,7 @@
+<!-- Configuration file for Flash tutorials -->
+<TUTORIAL TITLE="Species Area Effect and Island Biogeography">
+	<STEP MOVIE="1_species_area.swf" SUBSTEP="1" STEPTITLE="The species area effect" />
+	<STEP MOVIE="2_logarithms.swf" SUBSTEP="1" STEPTITLE="Logarithmic scales"/>
+	<STEP MOVIE="3_log_plot.swf" SUBSTEP="1" STEPTITLE="Standard versus log plots"/>
+	<STEP MOVIE="4_biogeogr.swf" SUBSTEP="1" STEPTITLE="Island biogeography theory"/>
+</TUTORIAL>

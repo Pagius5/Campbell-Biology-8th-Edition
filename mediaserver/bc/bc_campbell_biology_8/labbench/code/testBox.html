@@ -1,0 +1,57 @@
+<html>
+
+	<head>
+		<title>Text Entry</title>
+		<script language="Javascript" src="biocookie.js"></script>
+	<style type="text/css">
+BODY, P, TD, OL, UL, DD, DT, DL {font: 11px "Trebuchet MS", verdana, sans-serif; color:#222; margin:20px;}
+A, A:visited, .cg {text-decoration:underline; color:#369; font:inherit;}
+A:hover, A:visited:hover {text-decoration:none; color:#369;  font:inherit;}
+</style>
+</head>
+
+	<body bgcolor="white">
+<!-- text entry 1 -->
+		<b>Here's a hard one. What is 9 + 3?</b><br>
+
+		<script language="Javascript"> 
+		
+		gsUserAnswer = getNumberedBioCookie("1");
+		
+		if(gsUserAnswer == null) {
+			// First time into the page, or no text in text area
+			document.write("<form name='TestForm' action='javascript:window.location.reload();' method='post'>");
+			document.write("<input type='text' name='testBox' size='24' value='' onchange='writeNumberedBioCookie(\"1\",this.value);'><br>");
+			document.write("<input type='submit' value='Check Answer' name='CheckAnswer'>");
+			document.write("</form>");
+		} else {
+			// if there is text in the text area and the user hit the submit button
+			document.write("<p> Your answer was:" + gsUserAnswer);
+			document.write("<p> The correct answer is: 12");
+		}
+		</script>
+
+<!-- text entry 2 -->
+		<p><p>=========================<br>
+		<b>Here's a hard one. What is 10 + 4?</b><br>
+
+		<script language="Javascript"> 
+		gsUserAnswer = getNumberedBioCookie("2");
+					
+		if(gsUserAnswer) {
+			// if there is text in the text area and the user hit the submit button
+			document.write("<p> Your answer was:" + gsUserAnswer);
+			document.write("<p> The correct answer is: 14");
+		} else {
+			// First time into the page, or no text in text area
+			document.write("<form name='TestForm' action='javascript:window.location.reload();' method='post'>");
+			document.write("<input type='text' name='testBox' size='24' value='' onchange='writeNumberedBioCookie(\"2\",this.value);'><br>");
+			document.write("<input type='submit' value='Check Answer' name='CheckAnswer'>");
+			document.write("</form>");
+		}
+
+		</script>
+		<p><a href="(Empty Reference!)" onclick='deleteNumberedBioCookieAndReload("1");deleteNumberedBioCookieAndReload("2");return false;'>Reset</a>
+	</body>
+
+</html>

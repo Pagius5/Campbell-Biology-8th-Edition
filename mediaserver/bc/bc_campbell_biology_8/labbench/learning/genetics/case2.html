@@ -1,0 +1,106 @@
+<HTML>
+<HEAD>
+	<TITLE>Genetics of Organisms: Case 2</TITLE>
+	<MAP NAME="contents">
+		<AREA SHAPE="RECT" COORDS="16,1, 117,14" HREF="intro.html">
+		<AREA SHAPE="RECT" COORDS="16,22, 117,33" HREF="concepts.html">
+		<AREA SHAPE="RECT" COORDS="16,41, 117,61" HREF="design.html">
+		<AREA SHAPE="RECT" COORDS="16,70, 117,80" HREF="analysis.html">
+		<AREA SHAPE="RECT" COORDS="16,88, 117,99" HREF="quiz-sa.html">
+	</MAP>
+	<SCRIPT LANGUAGE="Javascript" SRC="../../code/biocookie.js"></SCRIPT>
+<style type="text/css">
+BODY, P, TD, OL, UL, DD, DT, DL {font: 11px "Trebuchet MS", verdana, sans-serif; color:#222; margin:20px;}
+A, A:visited, .cg {text-decoration:underline; color:#369; font:inherit;}
+A:hover, A:visited:hover {text-decoration:none; color:#369;  font:inherit;}
+</style>
+</head>
+
+<BODY BGCOLOR="white">
+<B>Genetics of Organisms</B><br>
+<TABLE BORDER="0" CELLPADDING="4" CELLSPACING="0" WIDTH="600">
+<TR>
+	<TD WIDTH="25" VALIGN="TOP">
+		<IMG SRC="../../images/spacer.gif" WIDTH="25" HEIGHT="1">
+	</TD>
+	<TD VALIGN="TOP" WIDTH="150">
+		<IMG SRC="../images/isgconts.gif" BORDER="0" ALT="Contents" ISMAP USEMAP="#contents">
+	</TD>
+	<TD WIDTH="350" VALIGN="TOP">		
+		<FONT SIZE="+1"><B>Case 2</B></FONT>
+		<P>
+		<IMG SRC="images/table3.gif" BORDER="0" WIDTH="224" HEIGHT="228"><BR>
+		<IMG SRC="images/table4.gif" BORDER="0" WIDTH="341" HEIGHT="208">
+		<P>
+		<TABLE WIDTH="350" CELLPADDING="5" CELLSPACING="0" BORDER="1" BGCOLOR="#FFFFCC">
+		<TR>
+			<TD WIDTH="350" VALIGN="TOP">
+				<A NAME="q1"></A>
+				<FORM NAME="question1" ACTION='javascript:window.location.reload();' METHOD='post'>
+				Based on the data obtained, which is the most likely mode of interitance in Case 2?
+				<P>
+				<INPUT TYPE="RADIO" NAME="q1" VALUE="1" onClick='writeNumberedBioCookie("case21", this.value);'> a. autosomal<BR>
+				<INPUT TYPE="RADIO" NAME="q1" VALUE="2" onClick='writeNumberedBioCookie("case21", this.value);'> b. sex-linked<BR>
+				<P>
+				<SCRIPT LANGUAGE="Javascript"> 
+				gsCorrectAnswer1 = "2";
+				gsUserAnswer	 = getNumberedBioCookie("case21");
+				if(gsUserAnswer == null) {
+					// First time into the page, or no choice selected		
+					document.write("<INPUT TYPE='IMAGE' SRC='../../images/checkans.gif' BORDER='0' ALT='Check Your Answers'>");
+				} else {
+					if(gsUserAnswer == gsCorrectAnswer1) {
+						document.write("<IMG SRC='../../images/check.gif' BORDER='0'><BR>");		
+					    document.write("<FONT COLOR='#037550'> Correct! Notice that the pattern of inheritance is not the same for males and females (there are no females with white eyes).  This is strong evidence for sex linkage.</FONT>");
+					} else {
+						document.write("<IMG SRC='../../images/x.gif' BORDER='0'><BR>");
+						document.write("<FONT COLOR='#037550'> Sorry. The correct answer is b. Notice that the pattern of inheritance is not the same for males and females (there are no females with white eyes).  This is strong evidence for sex linkage.</FONT>");
+					}
+			
+					var viChoiceIndex = eval(gsUserAnswer - 1);
+					document.question1.q1[viChoiceIndex].checked = true;
+				}
+				</SCRIPT></FORM>
+				<P>
+			</TD>
+		</TR>
+		<TR>
+			<TD WIDTH="350" VALIGN="TOP">
+			<FORM NAME="question2" ACTION='javascript:window.location.reload();' METHOD='post'>
+				From the data presented, determine the genotype of the <U>parental</U> (before the F<SUB>1</SUB> generation; not shown here) generation.<BR>
+				 + = wild type (red eyes)    &nbsp; &nbsp;  <I>w</I> = white eyes 
+				<P>
+				<INPUT TYPE="RADIO" NAME="q2" VALUE="1" onClick='writeNumberedBioCookie("case22", this.value);'> a. <I>X</I><SUP>+</SUP><I>X</I><SUP>+</SUP> <FONT FACE="geneva,arial" SIZE="-1">x</FONT> <I>X</I><SUP>+</SUP><I>Y</I> <BR>
+				<INPUT TYPE="RADIO" NAME="q2" VALUE="2" onClick='writeNumberedBioCookie("case22", this.value);'> b. <I>X</I><SUP>+</SUP><I>X<SUP>w</SUP></I> <FONT FACE="geneva,arial" SIZE="-1">x</FONT> <I>X</I><SUP>+</SUP><I>Y</I> <BR>
+				<INPUT TYPE="RADIO" NAME="q2" VALUE="3" onClick='writeNumberedBioCookie("case22", this.value);'> c. <I>X</I><SUP>+</SUP><I>X</I><SUP>+</SUP> <FONT FACE="geneva,arial" SIZE="-1">x</FONT> <I>X<SUP>w</SUP>Y</I><BR>
+				<INPUT TYPE="RADIO" NAME="q2" VALUE="4" onClick='writeNumberedBioCookie("case22", this.value);'> d. <I>X<SUP>w</SUP>X<SUP>w</SUP></I> <FONT FACE="geneva,arial" SIZE="-1">x</FONT> <I>X<SUP>w</SUP>Y</I>
+				<P>
+				<SCRIPT LANGUAGE="Javascript"> 
+				gsCorrectAnswer1 = "3";
+				gsUserAnswer	 = getNumberedBioCookie("case22");
+				if(gsUserAnswer == null) {
+					// First time into the page, or no choice selected		
+					document.write("<INPUT TYPE='IMAGE' SRC='../../images/checkans.gif' BORDER='0' ALT='Check Your Answers'>");
+				} else {
+					if(gsUserAnswer == gsCorrectAnswer1) {
+						document.write("<IMG SRC='../../images/check.gif' BORDER='0'> <FONT COLOR='#037550'>Correct!</FONT><BR>");		
+					} else {
+						document.write("<IMG SRC='../../images/x.gif' BORDER='0'><BR>");
+						document.write("<FONT COLOR='#037550'>Sorry. The correct response is c.  If you did not get this, make a Punnett square to understand the pattern here.</FONT>");
+					}
+			
+					var viChoiceIndex = eval(gsUserAnswer - 1);
+					document.question2.q2[viChoiceIndex].checked = true;
+				}
+				</SCRIPT></FORM>
+			</TR>
+		</TR>
+		</TABLE>
+		<P>		
+		<IMG SRC="../../images/arrow.gif" BORDER="0"> Continue to <A HREF="chisquar.html">Chi-Square Analysis of Data</A>.
+	</TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>

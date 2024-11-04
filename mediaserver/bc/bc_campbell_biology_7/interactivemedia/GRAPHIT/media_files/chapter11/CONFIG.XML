@@ -1,0 +1,6 @@
+<!-- Configuration file for Flash tutorials -->
+<TUTORIAL TITLE="Monitoring Major Air Pollutants">
+	<STEP MOVIE="1_particulates.swf" SUBSTEP="1" STEPTITLE="Particulates" />
+	<STEP MOVIE="2_co.swf" SUBSTEP="1" STEPTITLE="Carbon monoxide"/>
+	<STEP MOVIE="3_all.swf" SUBSTEP="1" STEPTITLE="Air pollution control policy"/>
+</TUTORIAL>

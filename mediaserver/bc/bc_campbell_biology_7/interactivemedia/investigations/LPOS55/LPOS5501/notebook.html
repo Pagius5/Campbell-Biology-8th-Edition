@@ -1,0 +1,812 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+
+
+<html>
+
+<head>
+
+	<title>Notebook</title>
+
+	<style>
+
+	p,td,th {font-family:"Arial"; font-size:10pt;}
+
+	span.pct {font-family:"Arial"; font-size:14pt;}
+
+	</style>
+
+</head>
+
+
+
+<body BACKGROUND="labnotebook.jpg" onLoad="top.fillNotebook()">
+
+<form name="notebook">
+
+<br>
+
+<center>
+
+  <table border="1" width="700" BORDERCOLOR="gray" BORDERCOLORLIGHT="gray">
+
+    <tr> 
+
+      <th width="135" height="23" align="left">&nbsp;</th>
+
+      <th colspan="4" height="23" align="center">Small Restoration Sites</th>
+
+      <th colspan="4" height="23" align="center">Large Restoration Sites</th>
+
+    </TR>
+
+    <tr> 
+
+      <th width="135" align="left">&nbsp;</th>
+
+      <th colspan="2" align="center">Site #1: Near</th>
+
+      <th colspan="2" align="center">Site #2: Far</th>
+
+      <th colspan="2" align="center">Site #3: Near</th>
+
+      <th colspan="2" align="center">Site #4: Far</th>
+
+    </TR>
+
+    <tr> 
+
+      <th width="135" align="left" height="22">Initial Sample</th>
+
+      <td valign="middle" colspan="2" height="22" align="center"># Species</TD>
+
+      <td valign="middle" colspan="2" height="22" align="center"># Species</td>
+
+      <td valign="middle" colspan="2" height="22" align="center"># Species</td>
+
+      <td valign="middle" colspan="2" height="22" align="center"># Species</td>
+
+    </TR>
+
+    <tr> 
+
+      <th width="135" align="right"><a href="javascript:top.plot('gr')"><img src="plot.gif" width="15" height="15" align="bottom" border="0"></a>&nbsp;Grasses</th>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="gr1n1"  value="" size="3">
+
+      </TD>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="gr1p1"  value="" size="3">
+
+        <span class="pct">%</span> </TD>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="gr1n2"  value="" size="3">
+
+      </TD>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="gr1p2"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </TD>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="gr1n3"  value="" size="3">
+
+      </TD>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="gr1p3"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </TD>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="gr1n4"  value="" size="3">
+
+      </TD>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="gr1p4"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </TD>
+
+    </TR>
+
+    <tr> 
+
+      <th width="135" align="right"><a href="javascript:top.plot('gh')"><img src="plot.gif" width="15" height="15" align="bottom" border="0"></a>&nbsp;Grasshoppers</th>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="gh1n1"  value="" size="3">
+
+      </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="gh1p1"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="gh1n2"  value="" size="3">
+
+      </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="gh1p2"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="gh1n3"  value="" size="3">
+
+      </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="gh1p3"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="gh1n4"  value="" size="3">
+
+      </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="gh1p4"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </td>
+
+    </tr>
+
+    <tr> 
+
+      <th width="135" align="right"><a href="javascript:top.plot('sb')"><img src="plot.gif" width="15" height="15" align="bottom" border="0"></a>&nbsp;Songbirds</th>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="sb1n1"  value="" size="3">
+
+      </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="sb1p1"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="sb1n2"  value="" size="3">
+
+      </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="sb1p2"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="sb1n3"  value="" size="3">
+
+      </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="sb1p3"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="sb1n4"  value="" size="3">
+
+      </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="sb1p4"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </td>
+
+    </tr>
+
+    <tr> 
+
+      <th width="135" align="right"><a href="javascript:top.plot('rd')"><img src="plot.gif" width="15" height="15" align="bottom" border="0"></a>&nbsp;Rodents</th>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="rd1n1"  value="" size="3">
+
+      </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="rd1p1"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="rd1n2"  value="" size="3">
+
+      </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="rd1p2"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="rd1n3"  value="" size="3">
+
+      </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="rd1p3"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="rd1n4"  value="" size="3">
+
+      </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="rd1p4"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </td>
+
+    </tr>
+
+    <tr> 
+
+      <th width="135" align="right"><a href="javascript:top.plot('fx')"><img src="plot.gif" width="15" height="15" align="bottom" border="0"></a>&nbsp;Foxes</th>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="fx1n1"  value="" size="3">
+
+      </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="fx1p1"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="fx1n2"  value="" size="3">
+
+      </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="fx1p2"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="fx1n3"  value="" size="3">
+
+      </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="fx1p3"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="fx1n4"  value="" size="3">
+
+      </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="fx1p4"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </td>
+
+    </tr>
+
+    <tr> 
+
+      <th width="135" align="right">TOTAL</th>
+
+      <td valign="middle" align="center" colspan="2"> 
+
+        <input type="text" name="tt1n1"  value="" size="3" onfocus="this.blur();">
+
+      </td>
+
+      <td valign="middle" align="center" colspan="2"> 
+
+        <input type="text" name="tt1n2"  value="" size="3" onfocus="this.blur();">
+
+      </td>
+
+      <td valign="middle" align="center" colspan="2"> 
+
+        <input type="text" name="tt1n3"  value="" size="3">
+
+      </td>
+
+      <td valign="middle" align="center" colspan="2"> 
+
+        <input type="text" name="tt1n4"  value="" size="3" onfocus="this.blur();">
+
+      </td>
+
+    </tr>
+
+    <tr> 
+
+      <th width="135" align="right"><a href="javascript:top.plot('tot')"><img src="plot.gif" width="15" height="15" align="bottom" border="0"></a>&nbsp;<span class="pct">%</span> of Species</th>
+
+      <td valign="middle" align="center" colspan="2"> 
+
+        <input type="text" name="tt1p1"  value="" size="3">
+
+      </td>
+
+      <td valign="middle" align="center" colspan="2"> 
+
+        <input type="text" name="tt1p2"  value="" size="3" onfocus="this.blur();">
+
+      </td>
+
+      <td valign="middle" align="center" colspan="2"> 
+
+        <input type="text" name="tt1p3"  value="" size="3" onfocus="this.blur();">
+
+      </td>
+
+      <td valign="middle" align="center" colspan="2"> 
+
+        <input type="text" name="tt1p4"  value="" size="3" onfocus="this.blur();">
+
+      </td>
+
+    </tr>
+
+</table>
+
+<br>
+
+<table border="1" width="700"  BORDERCOLOR="gray" BORDERCOLORLIGHT="gray"> 
+
+    <tr> 
+
+      <th width="135" align="left" height="22">Six-month Sample</th>
+
+      <th valign="middle" colspan="2" height="22" align="center">Site #1</TD>
+
+      <th valign="middle" colspan="2" height="22" align="center">Site #2</td>
+
+      <th valign="middle" colspan="2" height="22" align="center">Site #3</td>
+
+      <th valign="middle" colspan="2" height="22" align="center">Site #4</td>
+
+    </TR>
+
+    <tr> 
+
+      <th width="135" align="right"><a href="javascript:top.plot('gr')"><img src="plot.gif" width="15" height="15" align="bottom" border="0"></a>&nbsp;Grasses</th>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="gr6n1"  value="" size="3" onfocus="this.blur();">
+
+      </TD>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="gr6p1"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </TD>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="gr6n2"  value="" size="3" onfocus="this.blur();">
+
+      </TD>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="gr6p2"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </TD>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="gr6n3"  value="" size="3" onfocus="this.blur();">
+
+      </TD>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="gr6p3"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </TD>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="gr6n4"  value="" size="3" onfocus="this.blur();">
+
+      </TD>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="gr6p4"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </TD>
+
+    </TR>
+
+    <tr> 
+
+      <th width="135" align="right"><a href="javascript:top.plot('gh')"><img src="plot.gif" width="15" height="15" align="bottom" border="0"></a>&nbsp;Grasshoppers</th>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="gh6n1"  value="" size="3" onfocus="this.blur();">
+
+      </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="gh6p1"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="gh6n2"  value="" size="3" onfocus="this.blur();">
+
+      </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="gh6p2"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="gh6n3"  value="" size="3" onfocus="this.blur();">
+
+      </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="gh6p3"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="gh6n4"  value="" size="3" onfocus="this.blur();">
+
+      </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="gh6p4"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </td>
+
+    </tr>
+
+    <tr> 
+
+      <th width="135" align="right"><a href="javascript:top.plot('sb')"><img src="plot.gif" width="15" height="15" align="bottom" border="0"></a>&nbsp;Songbirds</th>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="sb6n1"  value="" size="3" onfocus="this.blur();">
+
+      </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="sb6p1"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="sb6n2"  value="" size="3" onfocus="this.blur();">
+
+      </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="sb6p2"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="sb6n3"  value="" size="3" onfocus="this.blur();">
+
+      </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="sb6p3"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="sb6n4"  value="" size="3" onfocus="this.blur();">
+
+      </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="sb6p4"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </td>
+
+    </tr>
+
+    <tr> 
+
+      <th width="135" align="right"><a href="javascript:top.plot('rd')"><img src="plot.gif" width="15" height="15" align="bottom" border="0"></a>&nbsp;Rodents</th>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="rd6n1"  value="" size="3" onfocus="this.blur();">
+
+      </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="rd6p1"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="rd6n2"  value="" size="3" onfocus="this.blur();">
+
+      </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="rd6p2"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="rd6n3"  value="" size="3" onfocus="this.blur();">
+
+      </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="rd6p3"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="rd6n4"  value="" size="3" onfocus="this.blur();">
+
+      </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="rd6p4"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </td>
+
+    </tr>
+
+    <tr> 
+
+      <th width="135" align="right"><a href="javascript:top.plot('fx')"><img src="plot.gif" width="15" height="15" align="bottom" border="0"></a>&nbsp;Foxes</th>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="fx6n1"  value="" size="3" onfocus="this.blur();">
+
+      </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="fx6p1"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="fx6n2"  value="" size="3" onfocus="this.blur();">
+
+      </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="fx6p2"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="fx6n3"  value="" size="3" onfocus="this.blur();">
+
+      </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="fx6p3"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="fx6n4"  value="" size="3" onfocus="this.blur();">
+
+      </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="fx6p4"  value="" size="3" onfocus="this.blur();">
+
+        <span class="pct">%</span> </td>
+
+    </tr>
+
+    <tr> 
+
+      <th width="135" align="right">TOTAL</th>
+
+      <td valign="middle" align="center" colspan="2"> 
+
+        <input type="text" name="tt6n1"  value="" size="3" onfocus="this.blur();">
+
+      </td>
+
+      <td valign="middle" align="center" colspan="2"> 
+
+        <input type="text" name="tt6n2"  value="" size="3" onfocus="this.blur();">
+
+      </td>
+
+      <td valign="middle" align="center" colspan="2"> 
+
+        <input type="text" name="tt6n3"  value="" size="3" onfocus="this.blur();">
+
+      </td>
+
+      <td valign="middle" align="center" colspan="2"> 
+
+        <input type="text" name="tt6n4"  value="" size="3" onfocus="this.blur();">
+
+      </td>
+
+    </tr>
+
+    <tr> 
+
+      <th width="135" align="right"><a href="javascript:top.plot('tot')"><img src="plot.gif" width="15" height="15" align="bottom" border="0"></a>&nbsp; <span class="pct">%</span> of Species</th>
+
+      <td valign="middle" align="center" colspan="2"> 
+
+        <input type="text" name="tt6p1"  value="" size="3">
+
+      </td>
+
+      <td valign="middle" align="center" colspan="2"> 
+
+        <input type="text" name="tt6p2"  value="" size="3" onfocus="this.blur();">
+
+      </td>
+
+      <td valign="middle" align="center" colspan="2"> 
+
+        <input type="text" name="tt6p3"  value="" size="3" onfocus="this.blur();">
+
+      </td>
+
+      <td valign="middle" align="center" colspan="2"> 
+
+        <input type="text" name="tt6p4"  value="" size="3" onfocus="this.blur();">
+
+      </td>
+
+    </tr>
+
+  </TABLE>
+
+<br>
+
+<table border="1" width="700"  BORDERCOLOR="gray" BORDERCOLORLIGHT="gray"> 
+
+    <tr> 
+
+      <th width="135" align="right" height="22" rowspan="2">Change in species&nbsp;<br>over time:&nbsp;</th>
+
+      <th valign="middle" height="22" align="center">Site #1</TD>
+
+      <th valign="middle" height="22" align="center">Site #2</td>
+
+      <th valign="middle" height="22" align="center">Site #3</td>
+
+      <th valign="middle" height="22" align="center">Site #4</td>
+
+    </TR>
+
+    <tr> 
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="change1"  value="" size="3">
+
+      </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="change2"  value="" size="3" onfocus="this.blur();">
+
+      </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="change3"  value="" size="3" onfocus="this.blur();">
+
+      </td>
+
+      <td valign="middle" align="center" nowrap> 
+
+        <input type="text" name="change4"  value="" size="3" onfocus="this.blur();">
+
+      </td>
+
+    </tr>
+
+</TABLE>
+
+</center>
+
+</FORM>
+
+
+
+
+
+</body>
+
+</html>
+

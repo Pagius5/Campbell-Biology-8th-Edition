@@ -1,0 +1,215 @@
+<HTML>
+<HEAD>
+	<TITLE>Molecular Biology: Label the Results of Your Experiment</TITLE>
+	<MAP NAME="contents">
+		<AREA SHAPE=RECT COORDS="27,4,82,16" HREF="intro.html">
+		<AREA SHAPE=RECT COORDS="18,22,96,34" HREF="concept1.html">
+		<AREA SHAPE=RECT COORDS="16,41,102,63" HREF="design1.html">
+		<AREA SHAPE=RECT COORDS="17,70,116,80" HREF="analys1.html">
+		<AREA SHAPE=RECT COORDS="16,88,90,98" HREF="quiz1-sa.html">
+	</MAP>
+	<SCRIPT LANGUAGE="Javascript" SRC="../../code/biocookie.js"></SCRIPT>
+<style type="text/css">
+BODY, P, TD, OL, UL, DD, DT, DL {font: 11px "Trebuchet MS", verdana, sans-serif; color:#222; margin:20px;}
+A, A:visited, .cg {text-decoration:underline; color:#369; font:inherit;}
+A:hover, A:visited:hover {text-decoration:none; color:#369;  font:inherit;}
+</style>
+</head>
+<BODY BGCOLOR="white">
+<B>Molecular Biology</B><br>
+<TABLE BORDER="0" CELLPADDING="4" CELLSPACING="0" WIDTH="600">
+<TR>
+	<TD WIDTH="25" VALIGN="TOP">
+		<IMG SRC="../../images/spacer.gif" WIDTH="25" HEIGHT="1">
+	</TD>
+	<TD VALIGN="TOP" WIDTH="150">
+		<IMG SRC="../images/isgconts1.gif" BORDER="0" ALT="Contents" ISMAP USEMAP="#contents">
+	</TD>
+	<TD WIDTH="350" VALIGN="TOP">
+		<FONT SIZE="+1"><B>Label the Results of Your Experiment</B></FONT>
+		<P>
+		After incubation, the following plates were removed from the incubator.  All but part of one label have been removed so that you must now use  your understanding of this laboratory to make new labels for each plate.
+	</TD>
+</TR>
+<TR>
+	<TD WIDTH="25" VALIGN="TOP">
+		<BR>
+	</TD>
+	<TD VALIGN="TOP" WIDTH="150" ALIGN="CENTER">
+		<IMG SRC="images/plate1.gif" BORDER="0">
+	</TD>
+	<TD WIDTH="350" VALIGN="TOP">
+		<A NAME="plates"></A>
+		<FORM NAME="question1" ACTION='javascript:window.location.reload();' METHOD='post'>
+		<TABLE WIDTH="350" BORDER="1" CELLPADDING="2" CELLSPACING="0" BGCOLOR="#FFFFCC">
+		<TR>
+			<TD WIDTH="350" VALIGN="TOP">
+		Plate I<BR>
+		<INPUT TYPE="RADIO" NAME="q1" VALUE="1" onClick='writeNumberedBioCookie("test21", this.value);'> a. LB agar without ampicillin, +amp<SUP>R</SUP> cells <BR>
+		<INPUT TYPE="RADIO" NAME="q1" VALUE="2" onClick='writeNumberedBioCookie("test21", this.value);'> b. LB agar without ampicillin, &#150;amp<SUP>R</SUP> cells <BR>
+		<INPUT TYPE="RADIO" NAME="q1" VALUE="3" onClick='writeNumberedBioCookie("test21", this.value);'> c. LB agar with ampicillin, +amp<SUP>R</SUP> cells <BR>
+		<INPUT TYPE="RADIO" NAME="q1" VALUE="4" onClick='writeNumberedBioCookie("test21", this.value);'> d. LB agar with ampicillin, &#150;amp<SUP>R</SUP> cells
+		<P>
+		<SCRIPT LANGUAGE="Javascript"> 
+		gsCorrectAnswer1 = "4";
+		gsUserAnswer     = getNumberedBioCookie("test21");
+		if(gsUserAnswer == null) {
+			// First time into the page, or no choice selected		
+			document.write("<INPUT TYPE='IMAGE' SRC='../../images/checkans.gif' BORDER='0' ALT='Check Your Answers'>");
+		} else {
+			if(gsUserAnswer == gsCorrectAnswer1) {
+				document.write("<IMG SRC='../../images/check.gif' BORDER='0'> <FONT COLOR='#037550'>Correct!</FONT><BR>");		
+			    document.write("LB agar with ampicillin, &#150;amp<SUP>R</SUP> cells. Plate I shows no growth. The agar must have ampicillin; without the +amp<SUP>R</SUP> plasmid, <I>E. coli</I> cannot grow on agar with ampicillin.");
+			} else {
+				document.write("<IMG SRC='../../images/x.gif' BORDER='0'> Sorry.<BR>");
+				document.write("The answer is d. LB agar with ampicillin, &#150;amp<SUP>R</SUP> cells. Plate I shows no growth. The agar must have ampicillin; without the +amp<SUP>R</SUP> plasmid, <I>E. coli</I> cannot grow on agar with ampicillin.");
+			}
+			var viChoiceIndex = eval(gsUserAnswer - 1);
+			document.question1.q1[viChoiceIndex].checked = true;
+		}
+		</SCRIPT></FORM>
+			</TD>
+		</TR>
+		</TABLE>
+	</TD>
+</TR>
+<TR>
+	<TD WIDTH="25" VALIGN="TOP">
+		<BR>
+	</TD>
+	<TD VALIGN="TOP" WIDTH="150" ALIGN="CENTER">
+		<IMG SRC="images/plate2.gif" BORDER="0">
+	</TD>
+	<TD WIDTH="350" VALIGN="TOP">
+		<TABLE WIDTH="350" BORDER="1" CELLPADDING="2" CELLSPACING="0" BGCOLOR="#FFFFCC">
+		<FORM NAME="question2" ACTION='javascript:window.location.reload();' METHOD='post'>
+		<TR>
+			<TD WIDTH="350" VALIGN="TOP">
+		Plate II<BR>
+		<INPUT TYPE="RADIO" NAME="q2" VALUE="1" onClick='writeNumberedBioCookie("test22", this.value);'> a. LB agar without ampicillin, +amp<SUP>R</SUP> cells <BR>
+		<INPUT TYPE="RADIO" NAME="q2" VALUE="2" onClick='writeNumberedBioCookie("test22", this.value);'> b. LB agar without ampicillin, &#150;amp<SUP>R</SUP> cells<BR>
+		<INPUT TYPE="RADIO" NAME="q2" VALUE="3" onClick='writeNumberedBioCookie("test22", this.value);'> c. LB agar with ampicillin, +amp<SUP>R</SUP> cells<BR>
+		<INPUT TYPE="RADIO" NAME="q2" VALUE="4" onClick='writeNumberedBioCookie("test22", this.value);'> d. LB agar with ampicillin, &#150;amp<SUP>R</SUP> cells
+		<P>
+		<SCRIPT LANGUAGE="Javascript"> 
+		gsCorrectAnswer1 = "2";
+		gsUserAnswer     = getNumberedBioCookie("test22");
+		if(gsUserAnswer == null) {
+			// First time into the page, or no choice selected		
+			document.write("<INPUT TYPE='IMAGE' SRC='../../images/checkans.gif' BORDER='0' ALT='Check Your Answers'>");
+		} else {
+			if(gsUserAnswer == gsCorrectAnswer1) {
+				document.write("<IMG SRC='../../images/check.gif' BORDER='0'> <FONT COLOR='#037550'>Correct!</FONT><BR>");		
+			    document.write("Plate II is already labeled &#150;amp<SUP>R</SUP>.  Therefore, this must be LB agar without ampicillin; otherwise no cells could grow.");
+			} else {
+				document.write("<IMG SRC='../../images/x.gif' BORDER='0'> Sorry.<BR>");
+				document.write("The answer is b. Plate II is already labeled &#150;amp<SUP>R</SUP>.  Therefore, this must be LB agar without ampicillin; otherwise no cells could grow.");
+			}
+			var viChoiceIndex = eval(gsUserAnswer - 1);
+			document.question2.q2[viChoiceIndex].checked = true;
+		}
+		</SCRIPT></FORM>
+			</TD>
+		</TR>
+		</TABLE>
+	</TD>
+</TR>
+<TR>
+	<TD WIDTH="25" VALIGN="TOP">
+		<BR>
+	</TD>
+	<TD VALIGN="TOP" WIDTH="150" ALIGN="CENTER">
+		<IMG SRC="images/plate3.gif" BORDER="0">
+	</TD>
+	<TD WIDTH="350" VALIGN="TOP">
+		<TABLE WIDTH="350" BORDER="1" CELLPADDING="2" CELLSPACING="0" BGCOLOR="#FFFFCC">
+		<FORM NAME="question3" ACTION='javascript:window.location.reload();' METHOD='post'>
+		<TR>
+			<TD WIDTH="350" VALIGN="TOP">
+		Plate III<BR>
+		<INPUT TYPE="RADIO" NAME="q3" VALUE="1" onClick='writeNumberedBioCookie("test23", this.value);'> a. LB agar without ampicillin, +amp<SUP>R</SUP> cells<BR>
+		<INPUT TYPE="RADIO" NAME="q3" VALUE="2" onClick='writeNumberedBioCookie("test23", this.value);'> b. LB agar without ampicillin, &#150;amp<SUP>R</SUP>cells <BR>
+		<INPUT TYPE="RADIO" NAME="q3" VALUE="3" onClick='writeNumberedBioCookie("test23", this.value);'> c. LB agar with ampicillin, +amp<SUP>R</SUP> cells <BR>
+		<INPUT TYPE="RADIO" NAME="q3" VALUE="4" onClick='writeNumberedBioCookie("test23", this.value);'> d. LB agar with ampicillin, &#150;amp<SUP>R</SUP> cells
+		<P>
+		<SCRIPT LANGUAGE="Javascript"> 
+		gsCorrectAnswer1 = "3";
+		gsUserAnswer     = getNumberedBioCookie("test23");
+		if(gsUserAnswer == null) {
+			// First time into the page, or no choice selected		
+			document.write("<INPUT TYPE='IMAGE' SRC='../../images/checkans.gif' BORDER='0' ALT='Check Your Answers'>");
+		} else {
+			if(gsUserAnswer == gsCorrectAnswer1) {
+				document.write("<IMG SRC='../../images/check.gif' BORDER='0'> <FONT COLOR='#037550'>Correct!</FONT><BR>");		
+			    document.write("LB agar with ampicillin, +amp<SUP>R</SUP> cells. Plate III shows growth, but only a few colonies. This is an indication that something is keeping a lawn of cells from growing. The logical explanation is that the cells are being grown on ampicillin-dosed agar, and only a small percentage of the cells have been transformed.");
+			} else {
+				document.write("<IMG SRC='../../images/x.gif' BORDER='0'> Sorry.<BR>");
+				document.write("The answer is c. LB agar with ampicillin, +amp<SUP>R</SUP> cells. Plate III shows growth, but only a few colonies. This is an indication that something is keeping a lawn of cells from growing. The logical explanation is that the cells are being grown on ampicillin-dosed agar, and only a small percentage of the cells have been transformed.");
+			}
+			var viChoiceIndex = eval(gsUserAnswer - 1);
+			document.question3.q3[viChoiceIndex].checked = true;
+		}
+		</SCRIPT></FORM>
+			</TD>
+		</TR>
+		</TABLE>
+	</TD>
+</TR>
+<TR>
+	<TD WIDTH="25" VALIGN="TOP">
+		<BR>
+	</TD>
+	<TD VALIGN="TOP" WIDTH="150" ALIGN="CENTER">
+		<IMG SRC="images/plate4.gif" BORDER="0">
+	</TD>
+	<TD WIDTH="350" VALIGN="TOP">
+		<TABLE WIDTH="350" BORDER="1" CELLPADDING="2" CELLSPACING="0" BGCOLOR="#FFFFCC">
+		<FORM NAME="question4" ACTION='javascript:window.location.reload();' METHOD='post'>
+		<TR>
+			<TD WIDTH="350" VALIGN="TOP">
+		Plate IV<BR>
+		<INPUT TYPE="RADIO" NAME="q4" VALUE="1" onClick='writeNumberedBioCookie("test24", this.value);'> a. LB agar without ampicillin, +amp<SUP>R</SUP> cells<BR>
+		<INPUT TYPE="RADIO" NAME="q4" VALUE="2" onClick='writeNumberedBioCookie("test24", this.value);'> b. LB agar without ampicillin, &#150;amp<SUP>R</SUP> cells<BR>
+		<INPUT TYPE="RADIO" NAME="q4" VALUE="3" onClick='writeNumberedBioCookie("test24", this.value);'> c. LB agar with ampicillin, +amp<SUP>R</SUP> cells<BR>
+		<INPUT TYPE="RADIO" NAME="q4" VALUE="4" onClick='writeNumberedBioCookie("test24", this.value);'> d. LB agar with ampicillin, &#150;amp<SUP>R</SUP> cells
+		<P>
+		<SCRIPT LANGUAGE="Javascript"> 
+		gsCorrectAnswer1 = "1";
+		gsUserAnswer     = getNumberedBioCookie("test24");
+		if(gsUserAnswer == null) {
+			// First time into the page, or no choice selected		
+			document.write("<INPUT TYPE='IMAGE' SRC='../../images/checkans.gif' BORDER='0' ALT='Check Your Answers'>");
+		} else {
+			if(gsUserAnswer == gsCorrectAnswer1) {
+				document.write("<IMG SRC='../../images/check.gif' BORDER='0'> <FONT COLOR='#037550'>Correct!</FONT><BR>");		
+			    document.write("LB agar without ampicillin, +amp<SUP>R</SUP> cells. Plate IV shows a lawn of cells. Since Plate II cells were &#150;amp<SUP>R</SUP>, these cells must be +amp<SUP>R</SUP>. The agar must not have ampicillin, or else a lawn could not grow.");
+			} else {
+				document.write("<IMG SRC='../../images/x.gif' BORDER='0'> Sorry.<BR>");
+				document.write("The answer is a. LB agar without ampicillin, +amp<SUP>R</SUP> cells. Plate IV shows a lawn of cells. Since Plate II cells were &#150;amp<SUP>R</SUP>, these cells must be +amp<SUP>R</SUP>. The agar must not have ampicillin, or else a lawn could not grow.");
+			}
+			var viChoiceIndex = eval(gsUserAnswer - 1);
+			document.question4.q4[viChoiceIndex].checked = true;
+		}
+		</SCRIPT></FORM>
+			</TD>
+		</TR>
+		</TABLE>
+	</TD>
+</TR>
+<TR>
+	<TD WIDTH="25" VALIGN="TOP">
+		<IMG SRC="../../images/spacer.gif" WIDTH="25" HEIGHT="1" BORDER="0">
+	</TD>
+	<TD WIDTH="150" VALIGN="BOTTOM">
+		<IMG SRC="../../images/spacer.gif" WIDTH="150" HEIGHT="1" BORDER="0">
+	</TD>
+	<TD WIDTH="350" VALIGN="TOP">
+		<IMG SRC="../../images/arrow.gif" WIDTH="10" HEIGHT="10" BORDER="0"> Continue to <A HREF="quiz1-sa.html">Lab Quiz I</A>.
+	</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

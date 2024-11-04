@@ -1,0 +1,7 @@
+<!-- Configuration file for Flash tutorials -->
+<TUTORIAL TITLE="Age Pyramids and Population Growth">
+	<STEP MOVIE="1_age_pyr.swf" SUBSTEP="1" STEPTITLE="What is an age pyramid?" />
+	<STEP MOVIE="2_types.swf" SUBSTEP="1" STEPTITLE="Age pyramid shape and growth"/>
+	<STEP MOVIE="3_greece.swf" SUBSTEP="1" STEPTITLE="Age structure of Greece"/>
+	<STEP MOVIE="4_colombia.swf" SUBSTEP="1" STEPTITLE="Age structure of Colombia"/>
+</TUTORIAL>

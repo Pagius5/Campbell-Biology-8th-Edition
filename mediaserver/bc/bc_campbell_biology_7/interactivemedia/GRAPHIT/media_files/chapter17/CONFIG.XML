@@ -1,0 +1,6 @@
+<!-- Configuration file for Flash tutorials -->
+<TUTORIAL TITLE="Global Oil Production and the Hubbert Curve">
+	<STEP MOVIE="1_production.swf" SUBSTEP="1" STEPTITLE="Trends in global oil production" />
+	<STEP MOVIE="2_hubbert.swf" SUBSTEP="1" STEPTITLE="Hubbert's Curve"/>
+	<STEP MOVIE="3_peak.swf" SUBSTEP="1" STEPTITLE="Predicting peak oil production"/>
+</TUTORIAL>

@@ -1,0 +1,79 @@
+<HTML>
+<HEAD>
+	<TITLE>Enzyme Catalysis: Analysis of Results</TITLE>
+	<SCRIPT LANGUAGE="Javascript" SRC="../../code/biocookie.js"></SCRIPT>
+<style type="text/css">
+BODY, P, TD, OL, UL, DD, DT, DL {font: 11px "Trebuchet MS", verdana, sans-serif; color:#222; margin:20px;}
+A, A:visited, .cg {text-decoration:underline; color:#369; font:inherit;}
+A:hover, A:visited:hover {text-decoration:none; color:#369;  font:inherit;}
+</style>
+</head>
+<BODY BGCOLOR="white">
+<B>Enzyme Catalysis</B><BR>
+<TABLE BORDER="0" CELLPADDING="4" CELLSPACING="0" WIDTH="600">
+<TR>
+	<TD WIDTH="25" VALIGN="TOP">
+		<IMG SRC="../../images/spacer.gif" WIDTH="25" HEIGHT="1">
+	</TD>
+	<TD WIDTH="150" VALIGN="TOP">
+		<IMG SRC="../images/isgconts.gif" WIDTH="122" HEIGHT="113" BORDER="0" ALT="Contents" ISMAP USEMAP="#contents">
+		<MAP NAME="contents">
+			<AREA SHAPE="RECT" COORDS="16,1, 117,14" HREF="intro.html">
+			<AREA SHAPE="RECT" COORDS="16,22, 117,33" HREF="concepts.html">
+			<AREA SHAPE="RECT" COORDS="16,41, 117,61" HREF="design.html">
+			<AREA SHAPE="RECT" COORDS="16,70, 117,80" HREF="analysis.html">
+			<AREA SHAPE="RECT" COORDS="16,88, 117,99" HREF="quiz-sa.html">
+		</MAP>
+	</TD>
+	<TD WIDTH="350" VALIGN="TOP">		
+		<FONT SIZE="+1"><B>Analysis of Results</B></FONT>
+		<P>
+		<B>Enzyme Action Over Time</B><BR>
+		<IMG SRC="images/timegr.gif" HEIGHT="157" WIDTH="192" ALT="graph of time vs product" VSPACE="5">
+		<P>
+		We can calculate the rate of a reaction by measuring, over time, either the disappearance of substrate (as in our catalase example) or the appearance of product (as in the above graph). For example, on the graph above, what is the rate, in moles/second, over the interval from 0 to 10 seconds?
+		<P>
+		<IMG SRC="images/eq1.gif" WIDTH="62" HEIGHT="23" BORDER="0" ALT="equation 1">
+		<P>so for this example, the rate would be
+		<P>
+		<IMG SRC="images/eq2.gif" WIDTH="225" HEIGHT="38" BORDER="0" ALT="equation 2">
+	</TD>
+</TR>
+<TR>
+	<TD WIDTH="25" VALIGN="TOP">
+		<BR>
+	</TD>
+	<TD VALIGN="TOP" WIDTH="150" ALIGN="RIGHT">
+		<B>Sample Problem</B>
+	</TD>
+	<TD WIDTH="350" VALIGN="TOP">
+		<A NAME="problem"></A>
+		<TABLE WIDTH="300" CELLPADDING="5" CELLSPACING="0" BORDER="1" BGCOLOR="#FFFFCC">
+		<TR>
+			<TD>
+				Calculate the rate in moles/second between 40 and 50 seconds. 
+				<SCRIPT LANGUAGE="Javascript"> 
+				gsUserAnswer = getNumberedBioCookie("analysis1");
+				if(gsUserAnswer == null) {
+					// First time into the page, or no text in text area
+					document.write("<FORM NAME='TestForm' ACTION='javascript:window.location.reload();' METHOD='post'>");
+					document.write("<INPUT TYPE='text' NAME='q1box' SIZE='5' VALUE='' onchange='writeNumberedBioCookie(\"analysis1\",this.value);'><P>");
+					document.write("<INPUT TYPE='image' SRC='../../images/checkans.gif' BORDER='0'  NAME='CheckAnswer'>");
+					document.write("</FORM>");
+				} else {
+					// if there is text in the text area and the user hit the submit button
+					document.write("<P><B>Your answer:</B> " + gsUserAnswer);
+					document.write("<P><FONT COLOR='#037550'>After 40 seconds there were no more substrate molecules. The curve becomes flat at this point, and the rate is zero.</FONT>");
+				}
+				</SCRIPT>
+			</TD>
+		</TR>
+		</TABLE>
+		<P>
+		<IMG SRC="../../images/arrow.gif" BORDER="0" HEIGHT="10" WIDTH="10"> Continue to the <A HREF="quiz-sa.html">Lab Quiz</A>.
+	</TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>

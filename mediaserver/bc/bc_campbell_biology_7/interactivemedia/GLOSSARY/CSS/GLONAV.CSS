@@ -1,0 +1,12 @@
+body { background-color:#FFFFFF; margin-top:18px; padding:5px; color:#0000CC;
+font-size:10px; font-family:arial,helvetica,sans-serif; text-decoration: none;
+}
+
+.title {
+color:#66CCFF; background-color:#005194; margin:0px; padding:7px; 
+font-size:22px; font-family:verdana,arial,helvetica,sans-serif; font-weight:normal;}
+
+.pulldown {
+color:#000099; background-color:#FFCC66; margin:0px; padding:7px; 
+font-size:10px; font-family:verdana,arial,helvetica,sans-serif; font-weight:normal;}
+

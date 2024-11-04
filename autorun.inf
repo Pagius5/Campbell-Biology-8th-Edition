@@ -1,0 +1,3 @@
+[AUTORUN]
+open=StartHere.exe /s
+icon=icon.ico

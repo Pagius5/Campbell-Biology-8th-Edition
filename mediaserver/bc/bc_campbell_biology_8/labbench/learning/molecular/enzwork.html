@@ -1,0 +1,140 @@
+<HTML>
+<HEAD>
+	<TITLE>Molecular Biology: How Do Restriction Enzymes Work?</TITLE>
+	<MAP NAME="contents">
+		<AREA SHAPE=RECT COORDS="27,4,82,16" HREF="intro.html">
+		<AREA SHAPE=RECT COORDS="18,22,96,34" HREF="concept2.html">
+		<AREA SHAPE=RECT COORDS="16,41,102,63" HREF="design2.html">
+		<AREA SHAPE=RECT COORDS="17,70,116,80" HREF="analys2.html">
+		<AREA SHAPE=RECT COORDS="16,88,90,98" HREF="quiz2-sa.html">
+	</MAP>
+	<SCRIPT LANGUAGE="Javascript" SRC="../../code/biocookie.js"></SCRIPT>
+	<SCRIPT LANGUAGE="JavaScript">		
+	function getCookieAndAnimateImg(xsWhich){
+	var mode = getNumberedBioCookie(xsWhich)
+	if(mode==null) {
+		writeNumberedBioCookie(xsWhich, "animate");
+	} else {
+		deleteNumberedBioCookie(xsWhich);
+		}
+	}
+	</SCRIPT>
+<style type="text/css">
+BODY, P, TD, OL, UL, DD, DT, DL {font: 11px "Trebuchet MS", verdana, sans-serif; color:#222; margin:20px;}
+A, A:visited, .cg {text-decoration:underline; color:#369; font:inherit;}
+A:hover, A:visited:hover {text-decoration:none; color:#369;  font:inherit;}
+</style>
+</head>
+
+<BODY BGCOLOR="white">
+<B>Molecular Biology</B><br>
+
+<TABLE BORDER="0" CELLPADDING="4" CELLSPACING="0" WIDTH="600">
+<TR>
+	<TD WIDTH="25" VALIGN="TOP">
+		<IMG SRC="../../images/spacer.gif" WIDTH="25" HEIGHT="1">
+	</TD>
+	<TD VALIGN="TOP" WIDTH="150">
+		<IMG SRC="../images/isgconts2.gif" BORDER="0" ALT="Contents" ISMAP USEMAP="#contents">
+	</TD>
+	<TD WIDTH="350" VALIGN="TOP">
+		<FONT SIZE="+1"><B>How Do Restriction Enzymes Work?</B></FONT>
+		<P>
+		Like all enzymes, restriction enzymes are highly specific.  They cut DNA only within very precise recognition sequences.  Study the illustrations below to see three different recognition sequences. The red line shows where the enzymes will cut the DNA.  Notice that all of these recognition sites are symmetrical, or what is called "palindromic."  This means that the recognition sequence on one DNA strand reads in the opposite direction on the complementary strand.
+	</TD>
+</TR>
+</TABLE>
+<A NAME="triple"></A>
+<TABLE BORDER="0" CELLPADDING="4" CELLSPACING="0" WIDTH="600">
+<TR>
+	<TD WIDTH="25" VALIGN="TOP">
+		<IMG SRC="../../images/spacer.gif" WIDTH="25" HEIGHT="1">
+	</TD>
+	<TD>
+		<TABLE BORDER="0" CELLPADDING="4" CELLSPACING="0">
+		<TR>
+			<TD WIDTH="200" VALIGN="TOP" ALIGN="CENTER">
+	<SCRIPT LANGUAGE="JavaScript">
+	state = getNumberedBioCookie("enzwork1");
+	if(state==null) {
+		document.write("<A HREF='' OnClick='javascript:getCookieAndAnimateImg(\"enzwork1\");window.location.reload();return false;'><IMG SRC='images/cutbtn.gif' NAME='button1' BORDER='0'></A><P>");
+		document.write("<IMG SRC='images/ecor1cut.gif'>");
+	} else {
+		if(state=="animate"){
+			document.write("<A HREF='' OnClick='javascript:getCookieAndAnimateImg(\"enzwork1\");window.location.reload();return false;'><IMG SRC='images/startovr.gif' NAME='button1' BORDER='0'></A><P>");
+			document.write("<IMG SRC='images/cutecor1.gif'>");
+			document.write("<P>EcoRI cuts the DNA so that the fragments have single-stranded ends.  These are called \"sticky ends\" because they will hydrogen bond with other strands of DNA that have a complementary sequence of bases.  This makes them useful in producing recombinant DNA.");
+			writeNumberedBioCookie("enzwork1", "still");
+		} else {
+			document.write("<A HREF='' OnClick='javascript:getCookieAndAnimateImg(\"enzwork1\");window.location.reload();return false;'><IMG SRC='images/startovr.gif' NAME='button1' BORDER='0'></A><P>");
+			document.write("<IMG SRC='images/cutecor1done.gif'>");
+			document.write("<P>EcoRI cuts the DNA so that the fragments have single-stranded ends.  These are called \"sticky ends\" because they will hydrogen bond with other strands of DNA that have a complementary sequence of bases.  This makes them useful in producing recombinant DNA.");
+		}
+	}
+	</SCRIPT>
+			</TD>
+			<TD WIDTH="200" VALIGN="TOP" ALIGN="CENTER">
+	<SCRIPT LANGUAGE="JavaScript">
+	state = getNumberedBioCookie("enzwork2");
+	if(state==null) {
+		document.write("<A HREF='' OnClick='javascript:getCookieAndAnimateImg(\"enzwork2\");window.location.reload();return false;'><IMG SRC='images/cutbtn.gif' NAME='button2' BORDER='0'></A><P>");
+		document.write("<IMG SRC='images/pst1cut.gif'>");
+	} else {
+		if(state=="animate"){
+			document.write("<A HREF='' OnClick='javascript:getCookieAndAnimateImg(\"enzwork2\");window.location.reload();return false;'><IMG SRC='images/startovr.gif' NAME='button2' BORDER='0'></A><P>");
+			document.write("<IMG SRC='images/cutpst1.gif'>");
+			document.write("<P>PstI cuts a different recognition sequence, but also produces DNA fragments with sticky ends.");
+			writeNumberedBioCookie("enzwork2", "still");
+		} else {
+			document.write("<A HREF='' OnClick='javascript:getCookieAndAnimateImg(\"enzwork2\");window.location.reload();return false;'><IMG SRC='images/startovr.gif' NAME='button2' BORDER='0'></A><P>");
+			document.write("<IMG SRC='images/cutpst1done.gif'>");
+			document.write("<P>PstI cuts a different recognition sequence, but also produces DNA fragments with sticky ends.");
+		}
+	}
+	</SCRIPT>
+			</TD>
+			<TD WIDTH="200" VALIGN="TOP" ALIGN="CENTER">
+	<SCRIPT LANGUAGE="JavaScript">
+	state = getNumberedBioCookie("enzwork3");
+	if(state==null) {
+		document.write("<A HREF='' OnClick='javascript:getCookieAndAnimateImg(\"enzwork3\");window.location.reload();return false;'><IMG SRC='images/cutbtn.gif' NAME='button3' BORDER='0'></A><P>");
+		document.write("<IMG SRC='images/sma1cut.gif'>");
+	} else {
+		if(state=="animate"){
+			document.write("<A HREF='' OnClick='javascript:getCookieAndAnimateImg(\"enzwork3\");window.location.reload();return false;'><IMG SRC='images/startovr.gif' NAME='button3' BORDER='0'></A><P>");
+			document.write("<IMG SRC='images/cutsma1.gif'>");
+			document.write("<P>SmaI cuts the DNA in such a way that no single-stranded piece is formed.  This results in what are called \"blunt ends.\"");
+			writeNumberedBioCookie("enzwork3", "still");
+		} else {
+			document.write("<A HREF='' OnClick='javascript:getCookieAndAnimateImg(\"enzwork3\");window.location.reload();return false;'><IMG SRC='images/startovr.gif' NAME='button3' BORDER='0'></A><P>");
+			document.write("<IMG SRC='images/cutsma1done.gif'>");
+			document.write("<P>SmaI cuts the DNA in such a way that no single-stranded piece is formed.  This results in what are called \"blunt ends.\"");
+		}
+	}
+	</SCRIPT>
+			</TD>
+		</TR>
+		</TABLE>
+	</TD>
+</TR>
+</TABLE>
+
+<TABLE WIDTH="600" BORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR>
+	<TD WIDTH="25" VALIGN="TOP">
+		<IMG SRC="../../images/spacer.gif" WIDTH="25" HEIGHT="1" BORDER="0">
+	</TD>
+	<TD VALIGN="BOTTOM" WIDTH="150">
+		<IMG SRC="../../images/spacer.gif" WIDTH="150" HEIGHT="1" BORDER="0">
+	</TD>
+	<TD WIDTH="350" VALIGN="TOP">
+		Next let's look at the laboratory procedures for cutting and separating DNA fragments.
+		<P>
+		<IMG SRC="../../images/arrow.gif" WIDTH="10" HEIGHT="10" BORDER="0"> Continue to <A HREF="cutdna.html">Cutting DNA with Restriction Enzymes</A>.
+	</TD>		
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>
+

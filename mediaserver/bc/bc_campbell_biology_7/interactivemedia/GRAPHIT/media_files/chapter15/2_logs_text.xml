@@ -1,0 +1,10 @@
+<TEXT>
+
+<P>We can fix the difficulty with plotting our island size data by using a logarithmic--or log--scale.</P>
+
+<P>A log scale accomodates large ranges by spacing orders of magnitude equally along the axis.  For example, on the axis at left 1, 10, and 100 square miles are all equally spaced.   Notice that a value of 5 does not lie equidistant between 1 and 10 on this scale.</P>
+
+<P>Each of the green dots represents a different island size in square miles.  Test your understanding of log scales by dragging each point to its correct location along the axis.</P>
+
+<P>When you are ready, proceed to Step 3.</P>
+</TEXT>

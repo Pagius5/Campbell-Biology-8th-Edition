@@ -1,0 +1,6 @@
+<TEXT>
+	<P>Draw a graph of this data by pressing "Plot the Data."</P>
+	<P>This is a new type of graph known as a bar chart.</P>
+	<P>Each bar represents one of the data rows in the table.  The microhabitat type is labeled at the bottom of each bar.  The height of the bar represents the frequency of capture.</P>
+	<P>Bar charts are used when the independent variable--in this case, microhabitat type--represents a category rather than a numerical value.  There is no basis for placing a microhabitat at any particular position along the X-axis.  Only the height of the bar has any numerical meaning.</P>
+</TEXT>

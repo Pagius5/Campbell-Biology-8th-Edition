@@ -1,0 +1,131 @@
+<HTML>
+<HEAD>
+	<TITLE>Population Genetics: Analysis of Results</TITLE>
+	<MAP NAME="contents">
+			<AREA SHAPE="RECT" COORDS="16,1, 117,14" HREF="intro.html">
+			<AREA SHAPE="RECT" COORDS="16,22, 117,33" HREF="concepts.html">
+			<AREA SHAPE="RECT" COORDS="16,41, 117,61" HREF="design.html">
+			<AREA SHAPE="RECT" COORDS="16,70, 117,80" HREF="analysis.html">
+			<AREA SHAPE="RECT" COORDS="16,88, 117,99" HREF="quiz-sa.html">
+	</MAP>
+	<SCRIPT LANGUAGE="Javascript" SRC="../../code/biocookie.js"></SCRIPT>
+<style type="text/css">
+BODY, P, TD, OL, UL, DD, DT, DL {font: 11px "Trebuchet MS", verdana, sans-serif; color:#222; margin:20px;}
+A, A:visited, .cg {text-decoration:underline; color:#369; font:inherit;}
+A:hover, A:visited:hover {text-decoration:none; color:#369;  font:inherit;}
+</style>
+</head>
+
+<BODY BGCOLOR="white">
+<B>Population Genetics</B><BR>
+
+<TABLE BORDER="0" WIDTH="600" CELLPADDING="4" CELLSPACING="0">
+<TR>
+	<TD WIDTH="25" VALIGN="TOP">
+		<IMG SRC="../../images/spacer.gif" WIDTH="25" HEIGHT="1">
+	</TD>
+	<TD WIDTH ="150" VALIGN="TOP">
+		<IMG SRC="../images/isgconts.gif" WIDTH="122" HEIGHT="113" BORDER="0" ALT="Contents" ISMAP USEMAP="#contents">
+	</TD>
+	<TD WIDTH="360" VALIGN="TOP">		
+		<FONT SIZE="+1"><B>Analysis of Results</B></FONT>
+		<P>
+		The following example can help you understand how Hardy-Weinberg equilibrium applies to your class experiment.
+	</TD>
+</TR>
+<TR>
+	<TD WIDTH="25" VALIGN=TOP ALIGN=RIGHT>
+		<BR>
+	</TD>
+	<TD WIDTH="150" VALIGN="TOP">
+		<TABLE WIDTH="150" BORDER="1" CELLPADDING="1" CELLSPACING="0">
+		<TR>
+			<TD WIDTH="150" ALIGN="LEFT">
+				<B>Note:</B><BR>
+				The population selected for this example has an equal frequency of dominant and recessive alleles in the initial population, but this is NOT what is meant by Hardy-Weinberg equilibrium!  If this population is at equilibrium, the next generation will also have the same allelic frequency, and the next, and the next . . .
+			</TD>
+		</TR>
+		</TABLE>
+	</TD>
+	<TD WIDTH="360">
+		A class of 12 AP biology students gathered the following data:
+		<P>
+		Initial class frequencies: <BR>
+		<I>AA</I> 3 &nbsp; &nbsp; <I>Aa</I> 6 &nbsp; &nbsp; <I>aa</I> 3
+		<P>
+		Final class frequencies:<BR>
+		<I>AA</I> 2 &nbsp; &nbsp; <I>Aa</I> 5 &nbsp; &nbsp; <I>aa</I> 5
+		<P>
+		<TABLE WIDTH="350" BORDER="1" CELLPADDING="3" CELLSPACING="0" BGCOLOR="#FFFFCC">
+		<TR>
+			<TD WIDTH="350" VALIGN="MIDDLE">
+				<A NAME="q1"></A>
+				1. What are the initial <I>p</I> and <I>q</I>? 
+				<P>
+				<SCRIPT LANGUAGE="Javascript"> 
+				gsUserAnswer = getNumberedBioCookie("analysis1");
+				if(gsUserAnswer == null) {
+				// First time into the page, or no text in text area
+				document.write("<FORM NAME='q1' ACTION='javascript:window.location.reload();' METHOD='post'>");
+				document.write("<INPUT TYPE='text' NAME='q1box' SIZE='24' VALUE='' onchange='writeNumberedBioCookie(\"analysis1\",this.value);'><BR>");
+				document.write("<INPUT TYPE='image' SRC='../../images/checkans.gif' BORDER='0' ALT='Check Answer' NAME='CheckAnswer'>");
+				document.write("</FORM>");
+				} else {
+				// if there is text in the text area and the user hit the submit button
+				document.write("<P><B>Your answer:</B> " + gsUserAnswer);
+				document.write("<P><FONT COLOR='#037550'><B>Answer:</B> Since you don't know yet if this population is in Hardy-Weinberg equilibrium, you will need to count the number of each type of allele. There are 12 copies of the <I>a</I> allele and 12 copies of the <I>A</I> allele; therefore, initial <I>p</I> = 0.5, <I>q</I>= 0.5</FONT>");
+				}
+				</SCRIPT>
+			</TD>
+		</TR>
+		<TR>
+			<TD WIDTH="350" VALIGN="MIDDLE">
+				<A NAME="q2"></A>
+				2. What are the final <I>p</I> and <I>q</I>?
+				<P>
+				<SCRIPT LANGUAGE="Javascript"> 
+				gsUserAnswer = getNumberedBioCookie("analysis2");
+				if(gsUserAnswer == null) {
+				// First time into the page, or no text in text area
+				document.write("<FORM NAME='q2' ACTION='javascript:window.location.reload();' METHOD='post'>");
+				document.write("<INPUT TYPE='text' NAME='q2box' SIZE='20' VALUE='' onchange='writeNumberedBioCookie(\"analysis2\",this.value);'><BR>");
+				document.write("<INPUT TYPE='image' SRC='../../images/checkans.gif' BORDER='0' ALT='Check Answer' NAME='CheckAnswer'>");
+				document.write("</FORM>");
+				} else {
+				// if there is text in the text area and the user hit the submit button
+				document.write("<P><B>Your answer:</B> " + gsUserAnswer);
+				document.write("<P><FONT COLOR='#037550'><B>Answer:</B> Final <I>p</I> = 0.375, <I>q</I> = 0.625 (There are 15 copies of <I>a</I> and 9 copies of <NOBR><I>A</I>)</NOBR>.</FONT>");
+				}
+				</SCRIPT>
+			</TD>
+		</TR>
+		<TR>
+			<TD WIDTH="350" VALIGN="MIDDLE">
+				<A NAME="q3"></A>
+				3. Is the population in Hardy-Weinberg equilibrium?  Explain the reason for your response.
+				<P>
+				<SCRIPT LANGUAGE="Javascript"> 
+				gsUserAnswer = getNumberedBioCookie("analysis3");
+				if(gsUserAnswer == null) {
+				// First time into the page, or no text in text area
+				document.write("<FORM NAME='q3' ACTION='javascript:window.location.reload();' METHOD='post'>");
+				document.write("<TEXTAREA NAME='q3box' COLS='40' ROWS='4' WRAP='VIRTUAL' VALUE='' onchange='writeNumberedBioCookie(\"analysis3\",this.value);'></TEXTAREA><P>");
+				document.write("<INPUT TYPE='image' SRC='../../images/checkans.gif' BORDER='0' ALT='Check Answer' NAME='CheckAnswer'>");
+				document.write("</FORM>");
+				} else {
+				// if there is text in the text area and the user hit the submit button
+				document.write("<P><B>Your answer:</B> " + gsUserAnswer);
+				document.write("<P><FONT COLOR='#037550'><B>Answer:</B> The population is not in Hardy-Weinberg equilibrium.  When a population is in equilibrium, allelic frequencies remain constant from generation to generation.  The most likely explanation for the results here is that the population size is very small.  Shifts in allelic frequency that result from chance in a small population such as this are called genetic drift.</FONT>");
+				}
+				</SCRIPT>
+			</TD>
+		</TR>
+		</TABLE>
+		<P>
+		<IMG SRC="../../images/arrow.gif" BORDER="0" WIDTH="10" HEIGHT="10"> Continue to <A HREF="quiz-sa.html">Lab Quiz</A>.
+	</TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>

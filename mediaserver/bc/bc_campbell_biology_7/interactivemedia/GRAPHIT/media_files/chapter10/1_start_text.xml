@@ -1,0 +1,7 @@
+<TEXT>
+<P>Scientists determine the toxicity of a substance by exposing laboratory animals to different concentrations, then measuring what proportion of the subjects show a toxic effect.</P>
+<P>When plotted, this type of data generates a dose-response curve.  The dose is placed on the X-axis as concentration of substance.  The response is placed on the Y-axis as a percentage.</P>
+<P>At left is a dose-response curve for lethal effects of a toxin at varying concentrations.  The dose that results in 50% mortality of subjects is called the LD&lt;font size="-4"&gt;50&lt;/font&gt; (or "50% Lethal Dose").</P>
+<P>You can determine the LD&lt;font size="-4"&gt;50&lt;/font&gt; by finding the point where the curve equals 50%, then projecting down to the X-axis to find the corresponding dose.</P>
+<P>The vertical line on the graph can be dragged left and right.  See if you can place it over the dose that represents the LD&lt;font size="-4"&gt;50&lt;/font&gt;.</P>
+</TEXT>

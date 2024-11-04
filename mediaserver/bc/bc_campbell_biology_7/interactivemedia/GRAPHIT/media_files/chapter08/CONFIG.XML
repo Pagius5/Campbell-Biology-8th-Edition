@@ -1,0 +1,6 @@
+<!-- Configuration file for Flash tutorials -->
+<TUTORIAL TITLE="Global Soil Degradation">
+	<STEP SUBSTEP="1" STEPTITLE="Land degradation by continent" MOVIE="1_degradation.swf" />
+	<STEP MOVIE="2_production.swf" SUBSTEP="1" STEPTITLE="Degradation and food production"/>
+	<STEP SUBSTEP="1" STEPTITLE="Severity of land degradation" MOVIE="3_detailed.swf"/>
+</TUTORIAL>

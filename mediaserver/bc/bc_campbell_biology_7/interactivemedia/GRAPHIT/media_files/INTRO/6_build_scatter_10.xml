@@ -1,0 +1,5 @@
+<TEXT>
+	<P>The scale you have entered will not generate a useful graph of the data set.</P>
+	<P>You should choose a minimum value for your X-axis that is equal to or a little smaller than the smallest "Stems per hectare" value in the data set.  You should choose a maximum value that is equal to or a little larger than the largest "Stems per hectare" value.</P>
+	<P>Use a similar rule for the maximum and minimum values of "Hares per hectare" on the Y-axis.</P>
+</TEXT>

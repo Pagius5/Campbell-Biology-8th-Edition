@@ -1,0 +1,82 @@
+<HTML>
+<HEAD>
+	<TITLE>Population Genetics: Estimating Allelic Frequency</TITLE>
+	<MAP NAME="contents">
+		<AREA SHAPE="RECT" COORDS="16,1, 117,14" HREF="intro.html">
+		<AREA SHAPE="RECT" COORDS="16,22, 117,33" HREF="concepts.html">
+		<AREA SHAPE="RECT" COORDS="16,41, 117,61" HREF="design.html">
+		<AREA SHAPE="RECT" COORDS="16,70, 117,80" HREF="analysis.html">
+		<AREA SHAPE="RECT" COORDS="16,88, 117,99" HREF="quiz-sa.html">
+	</MAP>
+	<SCRIPT LANGUAGE="Javascript" SRC="../../code/biocookie.js"></SCRIPT>
+<style type="text/css">
+BODY, P, TD, OL, UL, DD, DT, DL {font: 11px "Trebuchet MS", verdana, sans-serif; color:#222; margin:20px;}
+A, A:visited, .cg {text-decoration:underline; color:#369; font:inherit;}
+A:hover, A:visited:hover {text-decoration:none; color:#369;  font:inherit;}
+</style>
+</head>
+
+<BODY BGCOLOR="white">
+<B>Population Genetics</B><br>
+
+<TABLE BORDER="0" WIDTH="600" CELLPADDING="4" CELLSPACING="0">
+<TR>
+	<TD WIDTH="25" VALIGN="TOP">
+		<IMG SRC="../../images/spacer.gif" WIDTH="25" HEIGHT="1">
+	</TD>
+	<TD WIDTH ="150" VALIGN="TOP">
+		<IMG SRC="../images/isgconts.gif" WIDTH="122" HEIGHT="113" BORDER="0" ALT="Contents" ISMAP USEMAP="#contents">
+	</TD>
+	<TD WIDTH="350" VALIGN="TOP">		
+		<FONT SIZE="+1"><B>Estimating Allelic Frequency</B></FONT>
+		<P>
+		If a trait is controlled by two alternate alleles, how can we calculate the frequency of each allele?  For example, let us look at a sample population of pigs.
+	</TD>
+</TR>
+<TR>
+	<TD WIDTH="25" VALIGN="TOP">
+		<IMG SRC="../../images/spacer.gif" WIDTH="25" HEIGHT="1">
+	</TD>
+	<TD COLSPAN="2" ALIGN="RIGHT" VALIGN="TOP">
+		<IMG SRC="images/allfreq.gif" BORDER="0">
+	</TD>
+</TR>
+<TR>
+	<TD WIDTH="25" VALIGN="TOP">
+		<BR>
+	</TD>
+	<TD WIDTH ="150" VALIGN="BOTTOM">
+		<IMG SRC="../../images/spacer.gif" WIDTH="150" HEIGHT="1" BORDER="0">
+	</TD>
+	<TD WIDTH ="350" VALIGN="TOP">
+		<TABLE WIDTH="350" BORDER="1" CELLPADDING="3" CELLSPACING="0" BGCOLOR="#FFFFCC">
+		<TR>
+			<TD WIDTH="350" VALIGN="MIDDLE">
+				The allele for black coat is recessive to the allele for white coat.  Can you count the number of recessive alleles in this population?
+				<P>
+				<FORM NAME="q1" ACTION='javascript:window.location.reload();' METHOD='post'>
+				<INPUT TYPE="RADIO" NAME="choices" VALUE="1" onClick='writeNumberedBioCookie("allfreq1", this.value);'> Yes &nbsp; &nbsp; <INPUT TYPE="RADIO" NAME="choices" VALUE="2" onClick='writeNumberedBioCookie("allfreq1", this.value);'> No
+		<SCRIPT LANGUAGE="Javascript"> 
+		gsUserAnswer     = getNumberedBioCookie("allfreq1");
+	
+		if(gsUserAnswer == null) {
+			// First time into the page, or no choice selected		
+			document.write("<p><INPUT TYPE='IMAGE' SRC='../../images/checkans.gif' BORDER='0' ALT='Check Answer'>");
+		} else {
+			document.write("<p><FONT COLOR='#037550'><B>Answer:</B> There are 4 individuals with black coat, so it might seem that there are 8 copies of the recessive allele.  In fact, some of the individuals with white coat may be heterozygous for the trait. So you cannot estimate the number of recessive alleles simply by looking at the phenotypes in the population &#150; unless, that is, you know that the population is at Hardy-Weinberg equilibrium. If that is the case, then you can determine the frequencies of alleles and genotypes by using what is called the Hardy-Weinberg equation.</FONT>");
+			var viChoiceIndex = eval(gsUserAnswer - 1);
+			document.q1.choices[viChoiceIndex].checked = true;
+		}
+		</SCRIPT>
+				</FORM>
+			</TD>
+		</TR>
+		</TABLE>
+		<P>
+		<IMG SRC="../../images/arrow.gif" BORDER="0" WIDTH="10" HEIGHT="10"> Continue to <A HREF="hardwein.html">The Hardy-Weinberg Equation</A>.
+	</TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>

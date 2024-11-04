@@ -1,0 +1,215 @@
+<html>
+
+    <head>
+
+        <title>ISP</title>
+
+		<style>
+
+		th {font-family:"arial"; font-size:12px; font-weight:bold;}
+
+		td {font-family:"arial"; font-size:12px; font-weight:normal;}
+
+		</style>
+
+		<script language="javascript">
+
+		function checkSelect(theForm,num)
+
+		{
+
+			theList = 'select' + num
+
+			iSelected = theForm[theList].selectedIndex
+
+			if(theForm[theList].options[iSelected].value != 'yes')
+
+			{
+
+				theForm[theList].selectedIndex = 0
+
+			}
+
+		}
+
+		
+
+		function checkReport()
+
+		{
+
+			reportDone = 1
+
+			theForm = document.forms.report
+
+			for(num=1;num<=6;num++)
+
+			{
+
+				theList = 'select' + num
+
+				iSelected = theForm[theList].selectedIndex
+
+				if(theForm[theList].options[iSelected].value != 'yes')
+
+				{
+
+					reportDone = 0
+
+				}
+
+			}
+
+			if(reportDone)
+
+			{
+
+				top.GuideText.location = "gt02.html"
+
+			}
+
+			else
+
+			{
+
+				top.GuideText.location = "gt03.html"
+
+			}
+
+		}
+
+		
+
+		function handleOver()
+
+		{
+
+			document.images["submit"].src="submit_over.gif"
+
+			return false
+
+		}
+
+		
+
+		function handleOut()
+
+		{
+
+			document.images["submit"].src="submit.gif"
+
+			return false
+
+		}
+
+
+
+		</script>
+
+
+
+    </head>
+
+<body background="parchement.gif">
+
+<form action="#" name="report">
+
+<table border="0" cellspacing="10">
+
+<tr>
+
+<th align="left" valign="top">To:</th> 	
+
+<th align="left" valign="top">Director of Restoration Projects
+
+Department of Natural Resources
+
+State of Iowa</th>
+
+</tr>
+
+<tr><th align="left" valign="top">From:</th>	<th align="left" valign="top">Prairies-R-Us</th></tr>
+
+
+
+<tr><th align="left" valign="top">Re:</th>	<th align="left" valign="top">Prairie Restoration Analysis</th></tr>
+
+
+
+<tr><td colspan="2">We are happy to report that we have completed our study of prairie restoration sites for the State of Iowa.  Our findings suggest that for maximum efficiency, a restoration site should be located <select name="select1" onchange="checkSelect(this.form,'1')">
+
+<option value="no">&nbsp;</option>
+
+<option value="yes">close to</option>
+
+<option value="no">far away from</option> 
+
+</select> an established prairie.  We found that when a restoration site was 10 km away from an established prairie, it was difficult for species such as <select name="select2" onchange="checkSelect(this.form,'2')">
+
+<option value="no">&nbsp;</option>
+
+<option value="yes">grasshoppers</option>
+
+<option value="no">grasses</option>
+
+<option value="no">songbirds</option>
+
+<option value="no">foxes</option>
+
+</select> to colonize successfully.  An effective restoration site should also be fairly <select name="select3" onchange="checkSelect(this.form,'3')">
+
+<option value="no">&nbsp;</option>
+
+<option value="no">small</option>
+
+<option value="yes">large</option>
+
+</select> in size.  In our study, small sites of 1 acre did not provide sufficient habitat to support larger animal species such as <select name="select4" onchange="checkSelect(this.form,'4')">
+
+<option value="no">&nbsp;</option>
+
+<option value="no">songbirds and grasshoppers</option>
+
+<option value="yes">rodents and foxes</option>
+
+<option value="no">songbirds and foxes</option>
+
+</select>. &nbsp;We have also examined how the number of species at a  restoration site might change over time.  The increase in the number of species at the site will decline over time as <select name="select5" onchange="checkSelect(this.form,'5')">
+
+<option value="no">&nbsp;</option>
+
+<option value="no">competition</option>
+
+<option value="no">predation</option>
+
+<option value="yes">competition and predation</option>
+
+</select> begin to limit the total number of species at the site.  The final equilibrium number of species present will be the highest in a site that is <select name="select6" onchange="checkSelect(this.form,'6')">
+
+<option value="no">&nbsp;</option>
+
+<option value="no">small and near to</option>
+
+<option value="no">small and far from</option>
+
+<option value="yes">large and near to</option>
+
+<option value="no">large and far from</option>
+
+</select> an existing prairie.  We look forward to working with you on future restoration projects. </td></tr>
+
+</table>
+
+</form>
+
+<center><table border="0" cellpading="0" cellspacing="0">
+
+	<tr><td width="200" height="33" align="center" valign="middle" nowrap><a href="javascript:checkReport()" onMouseOver="return handleOver();" onMouseOut="return handleOut();"><img name="submit" src="submit.gif" width="200" height="33" align="bottom" border="0"></a></td></tr>
+
+</table></center>
+
+	
+
+	</body>
+
+</html>

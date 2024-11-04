@@ -1,0 +1,97 @@
+<HTML>
+<HEAD>
+	<TITLE>Diffusion and Osmosis: Types of Solutions</TITLE>
+	<MAP NAME="contents">
+		<AREA SHAPE="RECT" COORDS="16,1, 117,14" HREF="intro.html">
+	    <AREA SHAPE="RECT" COORDS="16,22, 117,33" HREF="concepts.html">
+	    <AREA SHAPE="RECT" COORDS="16,41, 117,61" HREF="design.html">
+	    <AREA SHAPE="RECT" COORDS="16,70, 117,80" HREF="analysis.html">
+	    <AREA SHAPE="RECT" COORDS="16,88, 117,99" HREF="quiz-sa.html">
+	</MAP>	
+	<SCRIPT LANGUAGE="Javascript" SRC="../../code/biocookie.js"></SCRIPT>
+<style type="text/css">
+BODY, P, TD, OL, UL, DD, DT, DL {font: 11px "Trebuchet MS", verdana, sans-serif; color:#222; margin:20px;}
+A, A:visited, .cg {text-decoration:underline; color:#369; font:inherit;}
+A:hover, A:visited:hover {text-decoration:none; color:#369;  font:inherit;}
+</style>
+</head>
+<BODY BGCOLOR="white">
+<B>Diffusion &amp; Osmosis</B><br>
+<TABLE BORDER="0" CELLPADDING="4" CELLSPACING="0" WIDTH="600">
+<TR>
+	<TD WIDTH="25" VALIGN="TOP">
+		<IMG SRC="../../images/spacer.gif" WIDTH="25" HEIGHT="1">
+	</TD>
+	<TD VALIGN="TOP" WIDTH="150">
+		<IMG SRC="../images/isgconts.gif" WIDTH="122" HEIGHT="113" BORDER="0" ALT="Contents" ISMAP USEMAP="#contents">
+	</TD>
+	<TD WIDTH="350" VALIGN="TOP">		
+		<FONT SIZE="+1"><B>Types of Solutions Based on Solute Concentration</B></FONT>
+		<P>
+		The terms hypotonic, hypertonic, and isotonic are used to compare solutions relative to their solute concentrations.
+	</TD>
+</TR>
+<TR>
+	<TD WIDTH="25" VALIGN="TOP">
+		<BR>
+	</TD>
+	<TD VALIGN="CENTER" WIDTH="150">
+		In the illustration to the right, the solution in the bag contains less solute than the solution in the beaker.  The solution in the bag is <A HREF="../../glossary/h.html#hypotonic"><B>hypotonic</B></A> (lower solute concentration) to the solution in the beaker.  The solution in the beaker is <A HREF="../../glossary/h.html#hypertonic"><B>hypertonic</B></A> (higher solute concentration) to the one in the bag.  Water will move from the hypotonic solution into the hypertonic solution.
+	</TD>
+	<TD VALIGN="TOP" WIDTH="350">
+		<BR><BR>
+		<IMG SRC="images/hyp.gif" BORDER="0" ALT="Hypertonic/hypotonic solutions">
+		<BR><BR>
+	</TD>
+</TR>
+<TR>
+	<TD WIDTH="25" VALIGN="TOP">
+		<BR>
+	</TD>
+	<TD VALIGN="CENTER" WIDTH="150">
+	    In this illustration the two solutions are equal in their solute concentrations.  We say that they are <A HREF="../../glossary/i.html#isotonic"><B>isotonic</B></A> to each other. <BR>
+	</TD>
+	<TD VALIGN="TOP" WIDTH="350">
+		<IMG SRC="images/iso.gif" BORDER="0" ALT="A beaker with isotonic solution">
+	</TD>
+</TR>
+<TR>
+	<TD WIDTH="25" VALIGN="TOP">
+		<BR>
+	</TD>
+	<TD WIDTH ="150" VALIGN="BOTTOM">
+		<IMG SRC="../../images/spacer.gif" WIDTH="150" HEIGHT="1" BORDER="0">
+	</TD>
+	<TD WIDTH ="350" VALIGN="TOP">
+		<A NAME="problem"></A>
+		<FORM NAME="q1" ACTION='javascript:window.location.reload();' METHOD='post'>
+		<TABLE WIDTH="300" CELLPADDING="5" CELLSPACING="0" BORDER="1" BGCOLOR="#FFFFCC">
+		<TR>
+			<TD>
+				Will there be a net movement of water between two isotonic solutions?
+                <P>
+				<INPUT TYPE="radio" NAME="choices" VALUE="1" onClick='writeNumberedBioCookie("types1", this.value);'> Yes <INPUT TYPE="radio" NAME="choices" VALUE="2" onClick='writeNumberedBioCookie("types1", this.value);'> No				
+				<P>
+		<SCRIPT LANGUAGE="Javascript"> 
+		gsUserAnswer     = getNumberedBioCookie("types1");
+			if(gsUserAnswer == null) {
+			// First time into the page, or no choice selected		
+			document.write("<P><INPUT TYPE='IMAGE' SRC='../../images/checkans.gif' BORDER='0' ALT='Check Answer'>");
+		} else {
+			document.write("<P><FONT COLOR='#037550'>Water will move freely between the two solutions if they are separated by a selectively permeable membrane.  However, there will be no net change in the concentration of water on either side of the membrane.  Differences in solute concentration will allow you to predict net changes in water movement.</FONT>");
+			var viChoiceIndex = eval(gsUserAnswer - 1);
+			document.q1.choices[viChoiceIndex].checked = true;
+		}
+		</SCRIPT>
+			</TD>
+		</TR>
+		</TABLE>
+		</FORM>
+		<P>
+		<IMG SRC="../../images/arrow.gif" BORDER="0" WIDTH="10" HEIGHT="10"> Continue to <A HREF="watpot.html">Water Potential</A>.
+	</TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>

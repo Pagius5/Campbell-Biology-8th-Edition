@@ -1,0 +1,72 @@
+<HTML>
+<HEAD>
+	<TITLE>Population Genetics: Sample Problem 2</TITLE>
+	<MAP NAME="contents">
+		<AREA SHAPE="RECT" COORDS="16,1, 117,14" HREF="intro.html">
+		<AREA SHAPE="RECT" COORDS="16,22, 117,33" HREF="concepts.html">
+		<AREA SHAPE="RECT" COORDS="16,41, 117,61" HREF="design.html">
+		<AREA SHAPE="RECT" COORDS="16,70, 117,80" HREF="analysis.html">
+		<AREA SHAPE="RECT" COORDS="16,88, 117,99" HREF="quiz-sa.html">
+	</MAP>
+	<SCRIPT LANGUAGE="Javascript" SRC="../../code/biocookie.js"></SCRIPT>
+<style type="text/css">
+BODY, P, TD, OL, UL, DD, DT, DL {font: 11px "Trebuchet MS", verdana, sans-serif; color:#222; margin:20px;}
+A, A:visited, .cg {text-decoration:underline; color:#369; font:inherit;}
+A:hover, A:visited:hover {text-decoration:none; color:#369;  font:inherit;}
+</style>
+</head>
+
+<BODY BGCOLOR="white">
+<B>Population Genetics</B><br>
+
+<TABLE BORDER="0" WIDTH="600" CELLPADDING="4" CELLSPACING="0">
+<TR>
+	<TD WIDTH="25" VALIGN="TOP">
+		<IMG SRC="../../images/spacer.gif" WIDTH="25" HEIGHT="1">
+	</TD>
+	<TD WIDTH ="150" VALIGN="TOP">
+		<IMG SRC="../images/isgconts.gif" WIDTH="122" HEIGHT="113" BORDER="0" ALT="Contents" ISMAP USEMAP="#contents">
+	</TD>
+	<TD WIDTH="350" VALIGN="TOP">		
+		<FONT SIZE="+1"><B>Sample Problem 2</B></FONT>
+		<P>
+		<IMG SRC="images/flyeyes.gif" BORDER="0">
+		<P>
+		<TABLE WIDTH="350" BORDER="1" CELLPADDING="3" CELLSPACING="0" BGCOLOR="#FFFFCC">
+		<TR>
+			<TD WIDTH="350" VALIGN="MIDDLE">
+				<A NAME="q1"></A>
+				In a certain population of 1000 fruit flies, 640 have red eyes while the remainder have sepia eyes.  The sepia eye trait is recessive to red eyes. How many individuals would you expect to be homozygous for red eye color?<P>
+				<B>Hint</B>: The first step is always to calculate <I>q</I><SUP>2</SUP>!  Start by determining the number of fruit flies that are homozygous recessive.  If you need help doing the calculation, look back at the <A HREF="hardwein.html"> Hardy-Weinberg equation</A>.<P>
+				<SCRIPT LANGUAGE="Javascript"> 
+				gsUserAnswer = getNumberedBioCookie("samprob21");
+				if(gsUserAnswer == null) {
+					// First time into the page, or no text in text area
+					document.write("<FORM NAME='TestForm' ACTION='javascript:window.location.reload();' METHOD='post'>");
+					document.write("<INPUT TYPE='text' NAME='q1' SIZE='25' VALUE='' onchange='writeNumberedBioCookie(\"samprob21\",this.value);'><P>");
+					document.write("<INPUT TYPE='IMAGE' NAME='Submit' SRC='../../images/checkans.gif' BORDER='0' ALT='Check Answer'>");
+					document.write("</FORM>");
+				} else {
+					// if there is text in the text area and the user hit the submit button
+					document.write("<P><B>Your answer:</B> " + gsUserAnswer);
+					document.write("<P><FONT COLOR='#037550'><B>Answer:</B><BR>");
+					document.write("You should expect 160 to be homozygous dominant.<BR>");
+					document.write("Calculations:<BR>");
+					document.write("<I>q</I><sup>2</sup> for this population is 360/1000 = 0.36<BR>");
+					document.write("<I>q</I> = <IMG SRC='images/36sqroot.gif' BORDER='0'> = 0.6<BR>");
+					document.write("<I>p</I> = 1 - <I>q</I> = 1 - 0.6 = 0.4<BR>");
+					document.write("The homozygous dominant frequency = <I>p</I><SUP>2</SUP> = (0.4)(0.4) = 0.16.<BR>");
+					document.write("Therefore, you can expect 16% of 1000, or 160 individuals, to be homozygous dominant.</FONT>");
+				}
+				</SCRIPT>
+			</TD>
+		</TR>
+		</TABLE>
+		<P>
+		<IMG SRC="../../images/arrow.gif" BORDER="0" WIDTH="10" HEIGHT="10"> Continue to <A HREF="samprob3.html">Sample Problem 3</A>.
+	</TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>

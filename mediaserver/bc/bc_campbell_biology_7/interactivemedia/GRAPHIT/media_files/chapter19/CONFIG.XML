@@ -1,0 +1,7 @@
+<!-- Configuration file for Flash tutorials -->
+<TUTORIAL TITLE="Municipal Solid Waste Trends in the U.S.">
+	<STEP SUBSTEP="1" STEPTITLE="Growth of municipal solid waste" MOVIE="1_growth.swf" />
+	<STEP SUBSTEP="1" STEPTITLE="Per capita MSW generation" MOVIE="2_percap.swf"/>
+	<STEP MOVIE="3_manage.swf" SUBSTEP="1" STEPTITLE="Where does MSW go?"/>
+	<STEP SUBSTEP="1" STEPTITLE="Area graphs" MOVIE="4_area.swf"/>
+</TUTORIAL>

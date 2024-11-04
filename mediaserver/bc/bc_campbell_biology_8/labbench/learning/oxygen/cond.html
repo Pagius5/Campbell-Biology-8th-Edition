@@ -1,0 +1,98 @@
+<HTML>
+<HEAD>
+	<TITLE>Dissolved Oxygen: Ideal Conditions</TITLE>
+	<MAP NAME="contents">
+		<AREA SHAPE="RECT" COORDS="16,1, 117,14" HREF="intro.html">
+		<AREA SHAPE="RECT" COORDS="16,22, 117,33" HREF="concepts.html">
+		<AREA SHAPE="RECT" COORDS="16,41, 117,61" HREF="design.html">
+		<AREA SHAPE="RECT" COORDS="16,70, 117,80" HREF="analysis.html">
+		<AREA SHAPE="RECT" COORDS="16,88, 117,99" HREF="quiz-sa.html">
+	</MAP>
+	<SCRIPT LANGUAGE="Javascript" SRC="../../code/biocookie.js"></SCRIPT>
+<style type="text/css">
+BODY, P, TD, OL, UL, DD, DT, DL {font: 11px "Trebuchet MS", verdana, sans-serif; color:#222; margin:20px;}
+A, A:visited, .cg {text-decoration:underline; color:#369; font:inherit;}
+A:hover, A:visited:hover {text-decoration:none; color:#369;  font:inherit;}
+</style>
+</head>
+<BODY BGCOLOR="white">
+<B>Dissolved Oxygen</B><BR>
+<TABLE BORDER="0" CELLPADDING="4" CELLSPACING="0" WIDTH="600">
+<TR>
+	<TD WIDTH="25" VALIGN="TOP">
+		<IMG SRC="../../images/spacer.gif" WIDTH="25" HEIGHT="1">
+	</TD>
+	<TD VALIGN="TOP" WIDTH="150">
+		<IMG SRC="images/contents.gif" BORDER="0" ALT="Contents" ISMAP USEMAP="#contents">
+	</TD>
+	<TD WIDTH="350" VALIGN="TOP">		
+		<FONT SIZE="+1"><B>Ideal Conditions for Maximum Dissolved Oxygen</B></FONT>
+		<P>
+		<TABLE WIDTH="350" BORDER="1" CELLPADDING="3" CELLSPACING="0" BGCOLOR="#FFFFCC">
+		<TR>
+			<TD WIDTH="350" VALIGN="TOP" ALIGN="LEFT">
+			1. Which environment has the greater concentration of dissolved oxygen: salt water or fresh water?
+			<SCRIPT LANGUAGE="Javascript"> 
+			gsUserAnswer = getNumberedBioCookie("cond1");
+			if(gsUserAnswer == null) {
+			// First time into the page, or no text in text area
+				document.write("<FORM NAME='q1' ACTION='javascript:window.location.reload();' METHOD='post'>");
+				document.write("<INPUT TYPE='text' NAME='q1box' SIZE='15' VALUE='' onchange='writeNumberedBioCookie(\"cond1\",this.value);'><BR>");
+				document.write("<INPUT TYPE='image' SRC='../../images/checkans.gif' BORDER='0'  NAME='CheckAnswer'>");
+				document.write("</FORM>");
+			} else {
+				// if there is text in the text area and the user hit the submit button
+				document.write("<P><B>Your answer:</B> " + gsUserAnswer);
+				document.write("<P><FONT COLOR='#037550'>Fresh water can hold more oxygen than salt water.</FONT>");
+			}
+			</SCRIPT>
+			</TD>
+		</TR>
+			<TD WIDTH="350" VALIGN="TOP" ALIGN="LEFT">
+			2. Which environment has the greater concentration of dissolved oxygen: warm water (31&deg;C) or cool water (18&deg;C)?
+			<SCRIPT LANGUAGE="Javascript"> 
+			gsUserAnswer = getNumberedBioCookie("cond2");
+			if(gsUserAnswer == null) {
+			// First time into the page, or no text in text area
+				document.write("<FORM NAME='q2' ACTION='javascript:window.location.reload();' METHOD='post'>");
+				document.write("<INPUT TYPE='text' NAME='q2box' SIZE='15' VALUE='' onchange='writeNumberedBioCookie(\"cond2\",this.value);'><BR>");
+				document.write("<INPUT TYPE='image' SRC='../../images/checkans.gif' BORDER='0'  NAME='CheckAnswer'>");
+				document.write("</FORM>");
+			} else {
+				// if there is text in the text area and the user hit the submit button
+				document.write("<P><B>Your answer:</B> " + gsUserAnswer);
+				document.write("<P><FONT COLOR='#037550'>Cool water can hold more dissolved oxygen than warm water. Now you know why the fish died in a hot aquarium.</FONT>");
+			}
+			</SCRIPT>
+			</TD>
+		</TR>
+		<TR>
+			<TD WIDTH="350" VALIGN="TOP" ALIGN="LEFT">
+			3. Which environment has the greater concentration of dissolved oxygen: a clear pond or a pond with a heavy algal mat?  Explain.
+			<SCRIPT LANGUAGE="Javascript"> 
+			gsUserAnswer = getNumberedBioCookie("cond3");
+			if(gsUserAnswer == null) {
+			// First time into the page, or no text in text area
+				document.write("<FORM NAME='q3' ACTION='javascript:window.location.reload();' METHOD='post'>");
+				document.write("<INPUT TYPE='text' NAME='q3box' SIZE='50' VALUE='' onchange='writeNumberedBioCookie(\"cond3\",this.value);'><BR>");
+				document.write("<INPUT TYPE='image' SRC='../../images/checkans.gif' BORDER='0'  NAME='CheckAnswer'>");
+				document.write("</FORM>");
+			} else {
+				// if there is text in the text area and the user hit the submit button
+				document.write("<P><B>Your answer:</B> " + gsUserAnswer);
+				document.write("<P><FONT COLOR='#037550'>Clear water holds more dissolved oxygen than water with a heavy algal mat.  Although photosynthesis in the algal mat will produce a great deal of oxygen, the decay of so much organic matter will result in a net depletion of oxygen.</FONT>");
+			}
+			</SCRIPT>
+			</TD>
+		</TR>
+		</TABLE>
+		<P>
+		Before we learn how to measure dissolved oxygen, let's consider the concept of primary productivity.
+		<P>		
+		<IMG SRC="../../images/arrow.gif" BORDER="0"> Continue to <A HREF="primary.html">Primary Productivity</A>.
+	</TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>

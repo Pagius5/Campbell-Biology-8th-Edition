@@ -1,0 +1,39 @@
+body { display:block; background-color:#FFFFFF; text-align:center; margin:0px; padding:10px;}
+
+TD.previous {
+color:#888888; margin:0px; padding:2px;
+font-size:11px; font-family:verdana,arial,helvetica,sans-serif; text-decoration: none;
+background-color:#FFFFFF; border-style:solid; border-width:1px; border-color:#000000; 
+}
+TD.replay {
+color:#888888; margin:0px; padding:2px;
+font-size:11px; font-family:verdana,arial,helvetica,sans-serif; text-decoration: none; 
+background-color:#FFFFFF; border-style:solid; border-width:1px; border-color:#000000;
+}
+TD.next {
+color:#888888; margin:0px; padding:2px;
+font-size:11px; font-family:verdana,arial,helvetica,sans-serif; text-decoration: none; 
+background-color:#FFFFFF; border-style:solid; border-width:1px; border-color:#000000;
+}
+
+A.previous {
+color:#000000; display:block; margin:0px; padding:2px; background-color:#FFCC66; 
+font-size:11px; font-family:verdana,arial,helvetica,sans-serif; text-decoration: none; 
+}
+A.previous:hover	{color:#FFFFFF; background-color:#0099CC;}
+
+A.replay {
+color:#000000; display:block; margin:0px; padding:2px; background-color:#FFCC66; 
+font-size:11px; font-family:verdana,arial,helvetica,sans-serif; text-decoration: none; 
+}
+A.replay:hover	{color:#FFFFFF; background-color:#0099CC;}
+
+A.next {
+color:#000000; display:block; margin:0px; padding:2px; background-color:#FFCC66; 
+font-size:11px; font-family:verdana,arial,helvetica,sans-serif; text-decoration: none; 
+}
+A.next:hover	{color:#FFFFFF; background-color:#0099CC;}
+
+TD.status { color:#000000; display:block; margin:0px; padding:2px;
+font-size:11px; font-family:verdana,arial,helvetica,sans-serif; text-decoration: none;
+}

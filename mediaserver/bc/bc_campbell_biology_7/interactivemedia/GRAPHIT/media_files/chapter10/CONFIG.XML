@@ -1,0 +1,8 @@
+<!-- Configuration file for Flash tutorials -->
+<TUTORIAL TITLE="Dose-Response Curves">
+	<STEP MOVIE="1_intro.swf" SUBSTEP="1" STEPTITLE="What is a dose-response curve?" />
+	<STEP MOVIE="2_logarithms.swf" SUBSTEP="1" STEPTITLE="Logarithmic scales"/>
+	<STEP MOVIE="3_curve1.swf" SUBSTEP="1" STEPTITLE="Dose-response curve #1"/>
+	<STEP MOVIE="4_curve2.swf" SUBSTEP="1" STEPTITLE="Dose-response curve #2"/>
+	<STEP MOVIE="5_generic.swf" SUBSTEP="1" STEPTITLE="Generic dose-response curves"/>
+</TUTORIAL>

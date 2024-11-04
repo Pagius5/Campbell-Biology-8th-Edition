@@ -1,0 +1,71 @@
+<HTML>
+<HEAD>
+	<TITLE>Circulatory Physiology: Measuring Temperature and Metabolic Rate</TITLE>
+	<MAP NAME="contents">
+		<AREA SHAPE=RECT COORDS="27,4,82,16" HREF="intro.html">
+		<AREA SHAPE=RECT COORDS="18,22,96,34" HREF="concept2.html">
+		<AREA SHAPE=RECT COORDS="16,41,102,63" HREF="design2.html">
+		<AREA SHAPE=RECT COORDS="17,70,116,80" HREF="analys2.html">
+		<AREA SHAPE=RECT COORDS="16,88,90,98" HREF="quiz2-sa.html">
+	</MAP>
+	<SCRIPT LANGUAGE="Javascript" SRC="../../code/biocookie.js"></SCRIPT>
+<style type="text/css">
+BODY, P, TD, OL, UL, DD, DT, DL {font: 11px "Trebuchet MS", verdana, sans-serif; color:#222; margin:20px;}
+A, A:visited, .cg {text-decoration:underline; color:#369; font:inherit;}
+A:hover, A:visited:hover {text-decoration:none; color:#369;  font:inherit;}
+</style>
+</head>
+
+<BODY BGCOLOR="white">
+<B>Circulatory Physiology</B><BR>
+
+<TABLE BORDER="0" CELLPADDING="4" CELLSPACING="0" WIDTH="600">
+<TR>
+	<TD WIDTH="25" VALIGN="TOP">
+		<IMG SRC="../../images/spacer.gif" WIDTH="25" HEIGHT="1">
+	</TD>
+	<TD WIDTH ="150" VALIGN="TOP">
+		<IMG SRC="../images/isgconts2.gif" BORDER="0" ALT="Contents" ISMAP USEMAP="#contents">
+	</TD>
+	<TD WIDTH="350" VALIGN="TOP">
+		<FONT SIZE="+1"><B>Measuring Temperature and Metabolic Rate</B></FONT>
+		<P>
+		The rate of metabolism in ectothermic animals increases as the environmental temperature increases.  This rise occurs because the reactants in the cell have greater thermal energy, and many cellular enzymes are more active as temperature increases. This effect is noticeable in a range from approximately 5&deg;C to 35&deg;C; at temperatures much higher than this, enzymes become denatured. 
+		<P>
+		The graph below illustrates the effect of increased temperature on metabolic rate in an aquatic ectotherm, <I>Daphnia magna</I> (water "flea").		<P>
+		<A NAME="animate"></A>
+		<IMG SRC="images/temprate.gif" WIDTH="256" HEIGHT="209" BORDER="0"><BR>
+		<P>
+		<A NAME="question"></A>
+		<TABLE WIDTH="350" BORDER="1" CELLPADDING="2" CELLSPACING="0" BGCOLOR="#FFFFCC">
+		<TR>
+			<TD WIDTH="350" VALIGN="TOP">
+			What is the relationship between metabolic rate and a 10&deg;C increase in temperature?
+			<P>
+			<SCRIPT LANGUAGE="Javascript"> 
+			gsUserAnswer = getNumberedBioCookie("temprate1");
+			if(gsUserAnswer == null) {
+			// First time into the page, or no text in text area
+			document.write("<FORM NAME='TestForm' ACTION='javascript:window.location.reload();' METHOD='post'>");
+			document.write("<TEXTAREA NAME='q1box' WRAP='VIRTUAL' ROWS='4' COLS='40' VALUE='' onchange='writeNumberedBioCookie(\"temprate1\",this.value);'></TEXTAREA><P>");
+			document.write("<INPUT TYPE='IMAGE' SRC='../../images/checkans.gif' BORDER='0' NAME='CheckAnswer'>");
+			document.write("</FORM>");
+			} else {
+			// if there is text in the text area and the user hit the submit button
+			document.write("<P><B>Your answer:</B> " + gsUserAnswer);
+			document.write("<P><FONT COLOR='#037550'>Each 10&deg;C increase in temperature results in a doubling of the metabolic rate.</FONT>");
+			}
+			</SCRIPT>
+			</TD>
+		</TR>
+		</TABLE>
+		<P>
+		The relationship between temperature and metabolic rate is often measured as <I>Q</I><SUB>10</SUB>.  If the metabolic rate doubles with a 10&deg;C increase in temperature, then <I>Q</I><SUB>10</SUB> = 2.
+		<P>
+ 		<IMG SRC="../../images/arrow.gif" WIDTH="10" HEIGHT="10" BORDER="0"> Continue to <A HREF="design2.html">Design of the Experiment II</A>.
+	</TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>

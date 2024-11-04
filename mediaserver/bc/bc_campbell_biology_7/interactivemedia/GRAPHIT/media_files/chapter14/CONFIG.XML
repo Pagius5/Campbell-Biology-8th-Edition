@@ -1,0 +1,6 @@
+<!-- Configuration file for Flash tutorials -->
+<TUTORIAL TITLE="Global Fresh Water Resources">
+	<STEP SUBSTEP="1" STEPTITLE="Total water resources" MOVIE="1_total.swf" />
+	<STEP SUBSTEP="1" STEPTITLE="Per capita water resources" MOVIE="2_percap.swf"/>
+	<STEP MOVIE="3_stress.swf" SUBSTEP="1" STEPTITLE="Demand versus water supply"/>
+</TUTORIAL>

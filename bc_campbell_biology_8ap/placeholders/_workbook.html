@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Online Feature Only</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link type="text/css" href="../media/objects/326/334000/_skins_/P/places_blue/0_code/style.css" rel="stylesheet">
+<script type="text/javascript" src="../media/objects/326/334000/_skins_/P/places_blue/0_code/scripts.js"></script>
+</head>
+
+<script type="text/javascript">
+var disable_placeholders = 0;
+
+function goto_arg_link() {
+	location = unescape(location.href.substring(location.href.indexOf('?') + 1));
+}
+
+function toggle_placeholder() {
+	if (disable_placeholders = !disable_placeholders) {
+		document.cookie = 'skip=yes';
+	} else {
+		document.cookie = '';
+	}
+}
+
+if (document.cookie == 'skip=yes') {
+	goto_arg_link();
+} else {
+	document.writeln('<body bgcolor="#FFFFFF" text="#000000">');
+	document.writeln('<table width="500" border="0" cellspacing="1" cellpadding="10"');
+	document.writeln('<tr>');
+	document.writeln('<td valign="top"><img src="www.gif" alt="Online Feature Only" border="0"></td>');
+	document.writeln('<td valign="top"><div class="mainHeader">Biological Inquiry Workbook Website</div>This website accompanies <i>Biological Inquiry: A Workbook of Investigative Cases</i> (by Waterman and Stanley) and provides links and electronic resources to help students solve the eight cases found in the workbook.<br><br>This is an online feature only. If you are connected to the Internet, you can <a href="javascript:open_workbook()" class="boldlink">log into the online Biological Inquiry Workbook Website</a>.</td>');
+	document.writeln('</tr>');
+	document.writeln('</table>');
+	document.writeln('</body>');
+}
+</script>
+
+</html>

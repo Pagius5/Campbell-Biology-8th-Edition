@@ -1,0 +1,18 @@
+body { 
+background-color:#FFFFFF; margin-top:10px; padding:5px; color:#000000;
+font-size:12px; font-family:arial,helvetica,sans-serif; text-decoration: none;
+}
+
+.term {
+background-color:#FFFFFF; margin:0px; padding:7px; color:#000000;
+font-size:14px; font-family:arial,helvetica,sans-serif; font-weight:bold; text-decoration: none;
+}
+
+.def {
+background-color:#FFFF99; margin:0px; padding:7px; color:#000000;
+font-size:12px; font-family:arial,helvetica,sans-serif; text-decoration: none;
+}
+
+A {color:#000099; font: 12px arial,verdana,sans-serif; text-decoration: none; }
+A:visited {color:#000099; font: 12px arial,verdana,sans-serif; text-decoration: none; }
+A:hover	{color:#000000; text-decoration: underline; background-color:#FFFF99;}

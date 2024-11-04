@@ -1,0 +1,49 @@
+/* Start of new style for WPS -- bd */
+
+/* The chapter pulldown menu, to control the font size */
+.pulldown { font-family: Arial, Helvetica, sans-serif; font-size:10pt; }
+
+/* The space above each item in the left nav */
+.left_nav_vspace  {font-size: 8px; font-family: Arial, Helvetica, sans-serif}
+
+/* The space above and below a separator item in the left nav */
+.left_nav_vspace_half  {font-size: 4px; font-family: Arial, Helvetica, sans-serif}
+
+/* Left nav links for which images don't exist. Small font size that is close to that of the images.
+   Colors are significant as background may either be light or dark. */
+a.leftnav               { color:#FFFFFF; font-family: Arial, Helvetica, sans-serif; font-size:10px; font-style: italic; text-decoration: none; }
+a.leftnav:active        { color:#FFFFFF; font-family: Arial, Helvetica, sans-serif; font-size:10px; font-style: italic; text-decoration: none; }
+a.leftnav:visited       { color:#FFFFFF; font-family: Arial, Helvetica, sans-serif; font-size:10px; font-style: italic; text-decoration: none; }
+a.leftnav:visited:hover { color:#FFFFFF; font-family: Arial, Helvetica, sans-serif; font-size:10px; font-style: italic; text-decoration: none; }
+
+/* Breadcrumb area background color and spacing above and below text. */
+td.breadcrumb_above {	background-color: #D7CCDD; font-family: Arial, Helvetica, sans-serif; font-size:4px; }
+td.breadcrumb_below {	background-color: #D7CCDD; font-family: Arial, Helvetica, sans-serif; font-size:4px; }
+
+/* Breadcrumb text. Text color, background color, and text size significant */
+td.breadcrumb { color:#000000; background-color: #D7CCDD;	font-family: Arial, Helvetica, sans-serif; font-size:11px; }
+
+/* Breadcrumb text when text is a link. Text color and size should match that above. */
+a.breadcrumb               { color:#000000; font-family: Arial, Helvetica, sans-serif; font-size:11px; }
+a.breadcrumb:active        { color:#000000; font-family: Arial, Helvetica, sans-serif; font-size:11px; }
+a.breadcrumb:visited       { color:#000000; font-family: Arial, Helvetica, sans-serif; font-size:11px; }
+a.breadcrumb:visited:hover { color:#000000; font-family: Arial, Helvetica, sans-serif; font-size:11px; }
+
+/* Vertical space above, between and below content header and secondary content header text lines */
+td.content_hdr_above   { background-color: #FFFFFF; font-family: Arial, Helvetica, sans-serif; font-size:24px; }
+td.content_hdr_between { background-color: #FFFFFF; font-family: Arial, Helvetica, sans-serif; font-size:6px; }
+td.content_hdr_below   { background-color: #FFFFFF; font-family: Arial, Helvetica, sans-serif; font-size:20px; }  
+
+/* Content header and secondary content header. Color and font attributes are significant */
+td.content_hdr  { color:#361B75; font-family: Arial, Helvetica, sans-serif; font-size:13pt; font-weight: bold; }
+td.content_hdr2 { color:#361B75; font-family: Arial, Helvetica, sans-serif; font-size:13pt; font-weight: bold; font-style: italic; }
+
+/* The copyright line */
+.copyright { font-family: Arial, Helvetica, sans-serif; font-size:9pt; }
+
+/* Links in the copyright line */
+a.crlink               { color:#000000; font-family: Arial, Helvetica, sans-serif; font-size:9px; }
+a.crlink:active        { color:#000000; font-family: Arial, Helvetica, sans-serif; font-size:9px; }
+a.crlink:visited       { color:#000000; font-family: Arial, Helvetica, sans-serif; font-size:9px; }
+a.crlink:visited:hover { color:#000000; font-family: Arial, Helvetica, sans-serif; font-size:9px; }
+

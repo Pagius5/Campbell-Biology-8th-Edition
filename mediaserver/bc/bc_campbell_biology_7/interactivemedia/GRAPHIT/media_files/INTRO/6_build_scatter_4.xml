@@ -1,0 +1,8 @@
+<TEXT>
+	<P>That's right.  A scatter plot is the best choice for this data set.</P>
+	<P>The next step is to choose the scales for the X and Y axes, that is, what the minimum and maximum values should be on the graph for each axis.</P>
+	<P>You want all of your data points to be included within the ranges you choose.  Also, you want the maximum and minimum values to be relatively close to the largest and smallest values in the data set.  Otherwise, you won't be able to see the trends in your data.</P>
+	<P>Right now, both axes have a minimum of 0 and a maximum of 100.  Change these to an appropriate scale for this data set by typing in the fields.  Then click on "Draw Plot."</P>
+	<P>Check to make sure that all your data points are on the graph and that there isn't a lot of empty space on the graph.  If you need to, you can change the scale and redraw the plot.</P>
+	<P>When you are happy with your graph, click on "Continue."</P>
+</TEXT>

@@ -1,0 +1,55 @@
+/****************************** Campbell, Biology, 8e / WebDevr Linda Young */
+
+/********** body and background **********/
+body							{font:12px Arial; line-height:12px; background:#122C76 url(../gradient.jpg) no-repeat 0px 0px;}
+#colorGradient					{}
+#banner							{visibility:hidden;}
+
+/********** toolbar (custom links) **********/
+#toolbarLinks					{position:absolute; left:5px; top:2px; width:540px; height:20px; z-index:2;}
+.toolbarCell					{padding-right:20px;}
+a.toolbarLink					{color:#FFFFFF; font:bold 10px Arial; padding-right:15px; font-style:normal; text-decoration:none;}
+a.toolbarLink:hover				{color:#122C76; font:bold 10px Arial; padding-right:15px; font-style:normal; text-decoration:none;}
+
+/********** dynamic text area **********/
+#dynTextHelp					{visibility:hidden;}
+#dynTextSkipNav					{visibility:hidden;}
+.dynText						{visibility:hidden;}
+
+/********** site navigation bar **********/
+#siteNavigation					{position:absolute; left:2px; top:78px; width:100%; height:30px; z-index:4; overflow:hidden;}
+	/* outer table */
+	#outerSiteNavTable
+	#outerSiteNavTableRow		{}
+	#outerSiteNavTableCell		{}
+		/* inner table */
+		#siteNavTable			{}		
+		#siteNavTableRow		{}
+		#siteNavTableCell6		{background:url(../search_bkgd.gif);}
+			/* select chapter table */
+			#sitenavMenuTable	{}
+			#sitenavMenuTableRow{}
+			.subvolMenu			{font:10px Arial; width:370px; padding:0px; margin:0px 0px 0px 20px;}
+			#menuselect
+#sitenavMenuTableNoScriptMessage{z-index:4;}
+
+/********** SMS buttons:account summary/log out links **********/
+#smsButtonsOuter				{position:absolute; left:0px; top:0px; z-index:1;}
+#smsButtons						{position:relative; float:right; width:100%; height:74px; z-index:3;}
+#smsButtonsTable				{}
+#smsButtonsTableRow				{}
+#smsButtonsTableCell			{text-align:right;}
+#smsButtonsInner				{z-index:3;}
+
+/********** CM info and buttons **********/
+#cmSmsButtonsOuter				{position:absolute; left:0px; top:0px; z-index:1;}
+#cmSmsButtons					{position:relative; float:right; width:100%; height:76px; padding-right:10px; z-index:5;}
+#cmSmsButtonsTable				{width:300px; background-color:#122C76;}
+#cmSmsButtonsTableRow			{}
+#cmSmsButtonsTableCell			{}
+.cmSmsTableCell					{}
+a.smsLinks						{font:11px Arial; font-weight:200; color:#FFFFFF; line-height:9px; text-decoration:none;}
+a.smsLinks:hover				{font:11px Arial; font-weight:200; color:#FFFFFF; line-height:9px; text-decoration:none;}
+.smsClassTitle					{font:11px Arial; font-weight:200; color:#FFFFFF; line-height:9px; text-decoration:none;}
+.smsWelcome						{font:bold 11px Arial; color:#FFFFFF; line-height:11px;}
+.smsProfName					{font:bold 11px Arial; color:#FFFFFF; line-height:11px;}

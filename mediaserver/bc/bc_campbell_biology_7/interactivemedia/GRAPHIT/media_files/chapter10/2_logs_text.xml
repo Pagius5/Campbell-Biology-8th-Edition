@@ -1,0 +1,10 @@
+<TEXT>
+
+<P>Dose-response studies typically investigate effects across a very large range of concentrations--for example, from .01 <SYM>m</SYM> gm/Kg to 10,000 <SYM>m</SYM> gm/Kg.  This range spans six orders of magnitude.</P>
+
+<P>A log scale accomodates large ranges by spacing orders of magnitude equally along the axis.  For example, on the axis at left 0.1, 1, and 10 <SYM>m</SYM> gm/Kg are all equally spaced.   Notice that a value of 5 does not lie equidistant between 1 and 10 on this scale.</P>
+
+<P>Each of the green dots represents a different concentration in <SYM>m</SYM> gm/Kg.  To practice plotting on a log scale, drag each point to its correct location along the axis.</P>
+
+<P>When you are ready, proceed to Step 3.</P>
+</TEXT>

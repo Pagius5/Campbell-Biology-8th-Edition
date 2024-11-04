@@ -1,0 +1,81 @@
+<HTML>
+<HEAD>
+	<TITLE>Respiration: Analysis of Results</TITLE>
+	<SCRIPT LANGUAGE="Javascript" SRC="../../code/biocookie.js"></SCRIPT>
+<style type="text/css">
+BODY, P, TD, OL, UL, DD, DT, DL {font: 11px "Trebuchet MS", verdana, sans-serif; color:#222; margin:20px;}
+A, A:visited, .cg {text-decoration:underline; color:#369; font:inherit;}
+A:hover, A:visited:hover {text-decoration:none; color:#369;  font:inherit;}
+</style>
+</head>
+
+<BODY BGCOLOR="white">
+<B>Cell Respiration</B><br>
+
+<TABLE BORDER="0" WIDTH="600" CELLPADDING="4" CELLSPACING="0">
+<TR>
+	<TD WIDTH="25" VALIGN="TOP">
+		<IMG SRC="../../images/spacer.gif" WIDTH="25" HEIGHT="1">
+	</TD>
+	<TD WIDTH="150" VALIGN="TOP">
+		<IMG SRC="../images/isgconts.gif" WIDTH="122" HEIGHT="113" BORDER="0" ALT="Contents" ISMAP USEMAP="#contents">
+		<MAP NAME="contents">
+			<AREA SHAPE="RECT" COORDS="16,1, 117,14" HREF="intro.html">
+			<AREA SHAPE="RECT" COORDS="16,22, 117,33" HREF="concepts.html">
+			<AREA SHAPE="RECT" COORDS="16,41, 117,61" HREF="design.html">
+			<AREA SHAPE="RECT" COORDS="16,70, 117,80" HREF="analysis.html">
+			<AREA SHAPE="RECT" COORDS="16,88, 117,99" HREF="quiz-sa.html">
+		</MAP>
+	</TD>
+	<TD WIDTH="350" VALIGN="TOP">		
+		<FONT SIZE="+1"><B>Analysis of Results</B></FONT>
+		<P>
+		After you have collected data for the amount of oxygen consumed over time by germinating and nongerminating peas at two different temperatures, you can compare the rates of respiration. Let's review how to calculate rate. 
+        <P>
+        Rate = slope of the line, or <IMG SRC="images/deltayx.gif" ALIGN="ABSMIDDLE">
+        <P>
+        In this case,  <IMG SRC="images/delta.gif"> <I>y</I> is the change in volume, and <IMG SRC="images/delta.gif"> <I>x</I> is the change in time (10 min).
+	</TD>
+</TR>
+<TR>
+	<TD WIDTH="25" VALIGN="TOP">
+		<BR>
+	</TD>
+	<TD VALIGN="TOP" WIDTH="150">
+		<A NAME="question">
+		<TABLE WIDTH="150" CELLPADDING="5" CELLSPACING="0" BORDER="1" BGCOLOR="#FFFFCC">
+		<TR>
+			<TD>
+				What would be the rate of oxygen consumption if the respirometer readings were as shown here? 
+				<SCRIPT LANGUAGE="Javascript"> 
+				gsUserAnswer = getNumberedBioCookie("analysis1");
+				if(gsUserAnswer == null) {
+				// First time into the page, or no text in text area
+				document.write("<FORM NAME='q1' ACTION='javascript:window.location.reload();' METHOD='post'>");
+				document.write("<INPUT TYPE='text' NAME='q1box' SIZE='5' VALUE='' onchange='writeNumberedBioCookie(\"analysis1\",this.value);'><P>");
+				document.write("<CENTER>");
+				document.write("<INPUT TYPE='image' SRC='../../images/checkans.gif' BORDER='0' HEIGHT='22' WIDTH='94' ALT='Check your answer.' NAME='CheckAnswer'>");
+				document.write("</CENTER>");
+				document.write("</FORM>");
+				} else {
+				// if there is text in the text area and the user hit the submit button
+				document.write("<P><B>Your answer:</B> <U>" + gsUserAnswer + "</U>");
+				document.write("<P><FONT COLOR='#037550'>The correct answer is 0.016 ml/min.</FONT>");
+				document.write("<P><IMG SRC='../../images/arrow.gif'> <A HREF='answer3a.html'>Review the calculation</A>");
+				}
+				</SCRIPT>
+				</TD>
+			</TR>
+		</TABLE>
+	</TD>
+	<TD VALIGN="TOP" WIDTH="350">
+		<IMG SRC="images/respirom.gif">
+		<P>
+		<IMG SRC="../../images/arrow.gif" BORDER="0" HEIGHT="10" WIDTH="10"> Continue to <A HREF="quiz-sa.html">Lab Quiz</A>.
+	</TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>
+
